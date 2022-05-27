@@ -10,7 +10,8 @@
 
 
 .about_content {
-  width: 80%;
+  width: 90%;
+  height: 90%;
   border: .1rem var(--color-hot-pink) solid;
   background: linear-gradient(
      to left,
@@ -18,6 +19,7 @@
      transparentize(rgb(8,10,46), .7)
    );
   justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
   border-radius: 2rem;
@@ -47,13 +49,12 @@
   }
 
   &__button {
-    padding: 15px;
+    padding: 2rem;
     border-radius: 20%/50%;
     background: linear-gradient(
        to left,
        rgb(137,16,165),
        rgb(49,10,63),
      );
-    width: 100%;
   }
 }

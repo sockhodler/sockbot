@@ -1,0 +1,16 @@
+.faq_wrapper {
+  display: flex;
+  background: var(--color-violet-4);
+}
+
+
+.faq_content {
+  width: 100%;
+  margin: 5%;
+  padding: 5% 5% 5% 5%;
+
+  & p{
+    margin: 4rem 0;
+  }
+
+}
