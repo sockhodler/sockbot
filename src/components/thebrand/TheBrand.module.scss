@@ -1,0 +1,27 @@
+.thebrand_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // padding: 0 10% 0 10%;
+  background: var(--color-dark);
+}
+
+
+.thebrand_content {
+  width: 90%;
+  border: .1rem var(--color-hot-pink) solid;
+  background: linear-gradient(
+     to left,
+     transparentize(rgb(117,6,143), .7),
+     transparentize(rgb(8,10,46), .7)
+   );
+  border-radius: 2rem;
+  padding: 5% 5% 5% 5%;
+  position: relative;
+
+  & p{
+    margin: 4rem 0;
+  }
+
+}

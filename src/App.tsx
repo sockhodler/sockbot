@@ -5,6 +5,7 @@ import Hero from './components/hero/Hero';
 import About from './components/about/About';
 import Story from './components/story/Story';
 import Faq from './components/faq/Faq';
+import TheBrand from './components/thebrand/TheBrand';
 import './styles/base/_base.scss';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Story />
       <Faq />
+      <TheBrand />
     </main>
 
   );
