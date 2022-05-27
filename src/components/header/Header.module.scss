@@ -1,0 +1,40 @@
+
+a {
+  padding:20px;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 3% 3%;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+
+.logo {
+  width: auto;
+  margin-right: 20rem;
+}
+.navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__link {
+    border-radius: 10rem;
+    padding: 2rem 2rem;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 6px;
+
+  }
+}
