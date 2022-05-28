@@ -1,12 +1,13 @@
 import * as React from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import classes from './About.module.scss';
-import classNames from "classnames";
 
 const About = () => {
 // ***** Finish Formatting This Section **** //
+
   return (
-    <div className = {classes.about_wrapper}>
+    <div id = "about" className = {classes.about_wrapper}>
       <div className = {classes.about_content}>
         <div className = {classes.about_content__about_left}>
           <h2>About</h2>
@@ -25,7 +26,7 @@ const About = () => {
           </p>
 
           <a className = {classes.about_content__button}>Join Discord</a>
-          
+
         </div>
         <div className = {classes.about_content__about_right}>
           <div className = {classes.about_content__card1}>

@@ -21,7 +21,7 @@ function Data(props:any) {
 const TheBrand = () => {
 // ***** Finish Formatting This Section **** //
   return (
-    <div className = {classes.thebrand_wrapper}>
+    <div id = "thebrand" className = {classes.thebrand_wrapper}>
       <div className = {classes.thebrand_content}>
         <div className = {classes.thebrand_content__left}>
           <img src = {SHSubmark} className = {classes.thebrand_content__shsubmark} />

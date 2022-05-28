@@ -6,7 +6,7 @@ import classNames from "classnames";
 const Story = () => {
 // ***** Finish Formatting This Section **** //
   return (
-    <div className = {classes.story_wrapper}>
+    <div id = "story" className = {classes.story_wrapper}>
       <div className = {classes.story_content}>
 
           <h2>Story</h2>

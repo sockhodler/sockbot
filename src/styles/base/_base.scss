@@ -4,12 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // font-family: var(--fonts-main);
 }
 
 html {
   font-size: 62.5%;
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +21,6 @@ body {
    var(--color-dark)
   );
   background-attachment: fixed;
-  // color: var(--color-white);
   min-height: 100vh;
 }
 
@@ -61,14 +60,6 @@ button {
   * {
     color: inherit;
   }
-}
-
-img {
-  // background: linear-gradient(
-  //   to right,
-  //   var(--color-dark-1),
-  //   var(--color-dark-violet-1)
-  // );
 }
 
 // react collapse
