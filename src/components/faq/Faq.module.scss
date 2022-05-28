@@ -3,14 +3,32 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background: var(--color-violet-4);
+  background: url('../../images/faq-bg.jpg') no-repeat center top;
+  background-size: cover;
+  position: relative;
 }
 
+.faq_circles {
+  background: url('../../images/faq-circles.svg') no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 1200px;
+  position: absolute;
+  right: 0;
+  top: -50rem;
+  z-index: 2;
+  mix-blend-mode: overlay;
+  overflow: hidden;
+
+}
 
 .faq_content {
   width: 80%;
   padding: 5% 5% 5% 10%;
   position: relative;
+  z-index: 10;
+  margin: 10rem 0 10rem 0;
+
 
   & p {
     margin: 4rem 0;

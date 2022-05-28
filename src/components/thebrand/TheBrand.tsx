@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import classes from './TheBrand.module.scss';
-import classNames from "classnames";
 import RedditIcon from '../../images/SH-Reddit.svg';
 import DiscordIcon from '../../images/SH-Discord.svg';
 import TwitterIcon from '../../images/SH-Twitter.svg';
@@ -13,7 +12,7 @@ const shname = "sockhodler.com";
 
 function Data(props:any) {
   return (
-    <a href = {props.url}><img src={props.img} className = {classes.social} /></a>
+    <a href = {props.url}><img src={props.img} className = {classes.social} alt = {props.alt} /></a>
   );
 }
 
@@ -34,9 +33,9 @@ const TheBrand = () => {
             <a href = {shurl}>{shname}</a>
           </div>
           <div className = {classes.social_links}>
-            <Data url="#" img={TwitterIcon} />
-            <Data url="#" img={RedditIcon} />
-            <Data url="#" img={DiscordIcon} />
+            <Data url="#" alt="" img={TwitterIcon} />
+            <Data url="#" alt="" img={RedditIcon} />
+            <Data url="#" alt="" img={DiscordIcon} />
           </div>
         </div>
 

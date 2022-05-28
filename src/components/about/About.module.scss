@@ -4,10 +4,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // padding: 0 10% 0 10%;
-  background: var(--color-dark);
+  background: url('../../images/about-bg.jpg') no-repeat center top;
+  background-size: cover;
+  position: relative;
 }
+.about_circles {
+  background: url('../../images/circles.svg') no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 1365px;
+  position: absolute;
+  left: 0rem;
+  top: -10rem;
+  z-index: 2;
+  mix-blend-mode: overlay;
+  overflow: hidden;
 
+}
 
 .about_content {
   width: 90%;
@@ -25,6 +38,7 @@
   border-radius: 2rem;
   padding: 10% 5% 10% 5%;
   position: relative;
+  z-index: 10;
 
   &__about_left {
     width: 100%;

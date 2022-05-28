@@ -1,6 +1,6 @@
 import * as React from 'react';
 // import { Link } from "react-router-dom";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import classes from './About.module.scss';
 
 const About = () => {
@@ -8,6 +8,7 @@ const About = () => {
 
   return (
     <div id = "about" className = {classes.about_wrapper}>
+      <div className = {classes.about_circles}></div>
       <div className = {classes.about_content}>
         <div className = {classes.about_content__about_left}>
           <h2>About</h2>

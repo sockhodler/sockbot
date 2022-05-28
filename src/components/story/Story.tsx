@@ -1,12 +1,13 @@
 import * as React from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import classes from './Story.module.scss';
-import classNames from "classnames";
 
 const Story = () => {
 // ***** Finish Formatting This Section **** //
   return (
     <div id = "story" className = {classes.story_wrapper}>
+      <div className = {classes.lines}></div>
+      
       <div className = {classes.story_content}>
 
           <h2>Story</h2>

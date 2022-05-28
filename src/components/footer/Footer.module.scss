@@ -33,6 +33,11 @@
     transition: all 0.3s ease-in-out;
     font-size: 1.6rem;
     letter-spacing: 3px;
+    cursor: pointer;
+  }
+
+  &__menu a:hover {
+    color: var(--color-hot-pink)
   }
 
   &__social {
