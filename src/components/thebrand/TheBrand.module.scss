@@ -3,25 +3,92 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 625px;
   // padding: 0 10% 0 10%;
-  background: var(--color-dark);
+  // background-image: url('../../images/thebrand-bg.jpg') no-repeat;
+  // background-size: cover;
+  background: url('../../images/thebrand-bg.jpg') no-repeat center top;
+  background-size: cover;
 }
 
 
 .thebrand_content {
   width: 90%;
-  border: .1rem var(--color-hot-pink) solid;
-  background: linear-gradient(
-     to left,
-     transparentize(rgb(117,6,143), .7),
-     transparentize(rgb(8,10,46), .7)
-   );
-  border-radius: 2rem;
-  padding: 5% 5% 5% 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
+
 
   & p{
     margin: 4rem 0;
   }
 
+  &__left {
+    margin: auto;
+
+  }
+
+  &__right {
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__shsubmark {
+    width: 600px;
+    mix-blend-mode: overlay;
+    z-index: 2;
+    position: relative;
+    opacity: 50%;
+
+  }
+
+  &__bot {
+    position: absolute;
+    z-index: 3;
+    left: 12%;
+    top: 10%;
+  }
+
+}
+
+.capsule {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 0 3rem;
+  border-radius: 500px;
+  background: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all .45s ease-in;
+
+  & a {
+    color: var(--color-violet);
+    font-size: 3rem;
+    letter-spacing: .20rem;
+    text-align: center;
+  }
+}
+.capsule:hover {
+  background: var(--color-hot-pink);
+
+  & a {
+    color: var(--color-white);
+  }
+}
+
+.social {
+  width: 85px;
+  height: 85px;
+  color: var(--color-white);
+}
+
+.social:hover {
+  color: var(--color-hot-pink);
 }

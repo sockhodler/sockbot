@@ -7,27 +7,27 @@ import Logo from "../../images/logo.png";
 const navLinks = [
   {
     text: "Home",
-    url: "#"
+    url: "#home"
   },
   {
     text: "About",
-    url: "#"
+    url: "#about"
   },
   {
     text: "Story",
-    url: "#"
+    url: "#story"
   },
   {
     text: "Gallery",
-    url: "#"
+    url: "/gallery"
   },
   {
     text: "FAQ",
-    url: "#"
+    url: "#faq"
   },
   {
     text: "The Brand",
-    url: "#"
+    url: "#brand"
   },
 ]
 

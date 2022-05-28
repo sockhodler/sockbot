@@ -2,15 +2,20 @@ import * as React from 'react';
 import { Link } from "react-router-dom";
 import classes from './TheBrand.module.scss';
 import classNames from "classnames";
+import RedditIcon from '../../images/SH-Reddit.svg';
+import DiscordIcon from '../../images/SH-Discord.svg';
+import TwitterIcon from '../../images/SH-Twitter.svg';
+import SHSubmark from '../../images/SH-Submark.svg';
+import Bot from '../../images/bot.png';
 
-const URL = "https://www.sockhodler.com";
-const BRANDNAME = "sockhodler.com";
+const shurl = "https://www.sockhodler.com";
+const shname = "sockhodler.com";
 
 function Data(props:any) {
   return (
-
-      );
-  }
+    <a href = {props.url}><img src={props.img} className = {classes.social} /></a>
+  );
+}
 
 
 const TheBrand = () => {
@@ -18,15 +23,24 @@ const TheBrand = () => {
   return (
     <div className = {classes.thebrand_wrapper}>
       <div className = {classes.thebrand_content}>
+        <div className = {classes.thebrand_content__left}>
+          <img src = {SHSubmark} className = {classes.thebrand_content__shsubmark} />
+          <img src = {Bot} className = {classes.thebrand_content__bot} />
+        </div>
 
+        <div className = {classes.thebrand_content__right}>
           <h2>The Brand</h2>
           <div className = {classes.capsule}>
-            <a href = {props.URL}>{props.BRANDNAME}</a>
+            <a href = {shurl}>{shname}</a>
           </div>
           <div className = {classes.social_links}>
-            <Data name="Reddit" url="#" img="#" />
-
+            <Data url="#" img={TwitterIcon} />
+            <Data url="#" img={RedditIcon} />
+            <Data url="#" img={DiscordIcon} />
           </div>
+        </div>
+
+
 
       </div>
     </div>

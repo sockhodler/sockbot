@@ -6,6 +6,7 @@ import About from './components/about/About';
 import Story from './components/story/Story';
 import Faq from './components/faq/Faq';
 import TheBrand from './components/thebrand/TheBrand';
+import Footer from './components/footer/Footer';
 import './styles/base/_base.scss';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Story />
       <Faq />
       <TheBrand />
+      <Footer />
     </main>
 
   );
