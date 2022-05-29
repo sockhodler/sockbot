@@ -23,8 +23,8 @@ const TheBrand = () => {
     <div id = "thebrand" className = {classes.thebrand_wrapper}>
       <div className = {classes.thebrand_content}>
         <div className = {classes.thebrand_content__left}>
-          <img src = {SHSubmark} className = {classes.thebrand_content__shsubmark} />
-          <img src = {Bot} className = {classes.thebrand_content__bot} />
+          <img src = {SHSubmark} className = {classes.thebrand_content__shsubmark} alt = "SockBot SHSubmark" />
+          <img src = {Bot} className = {classes.thebrand_content__bot}  alt = "Robot" />
         </div>
 
         <div className = {classes.thebrand_content__right}>

@@ -8,9 +8,9 @@ const About = () => {
 
   return (
     <div id = "about" className = {classes.about_wrapper}>
-      <div className = {classes.about_circles}></div>
+
       <div className = {classes.about_content}>
-        <div className = {classes.about_content__about_left}>
+        <div className = {classes.about_content__left}>
           <h2>About</h2>
           <p>
             Lost SockBot is a collection of x,xxx NFTs minted on Algorand.
@@ -26,14 +26,14 @@ const About = () => {
             SockBot is brought to you by your dear friends at SockHodler.
           </p>
 
-          <a className = {classes.about_content__button}>Join Discord</a>
+          <a href="https://discord.gg/8zD6BnTup2" className = {classes.about_content__button}>Join Discord</a>
 
         </div>
-        <div className = {classes.about_content__about_right}>
-          <div className = {classes.about_content__card1}>
+        <div className = {classes.about_content__right}>
+          <div className = {classes.card1}>
             gggg
           </div>
-          <div className = {classes.about_content__card2}>
+          <div className = {classes.card2}>
             gggg
           </div>
         </div>

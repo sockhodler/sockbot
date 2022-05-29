@@ -7,6 +7,7 @@
   background: url('../../images/story-bg.jpg') no-repeat center top;
   background-size: cover;
   position: relative;
+  z-index: 4;
 }
 
 .lines {
@@ -19,7 +20,7 @@
   z-index: 2;
   mix-blend-mode: overlay;
   overflow: hidden;
-
+  z-index: 5;
 }
 
 .story_content {
@@ -27,8 +28,8 @@
   border: .1rem var(--color-hot-pink) solid;
   background: linear-gradient(
      to left,
-     transparentize(rgb(117,6,143), .7),
-     transparentize(rgb(8,10,46), .7)
+     rgba(117,6,143,.7),
+     rgba(8,10,46,.7)
    );
   border-radius: 2rem;
   padding: 5% 5% 5% 5%;

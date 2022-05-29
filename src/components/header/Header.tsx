@@ -11,6 +11,7 @@ const Header = () => {
       <div className={classes.logo}>
         <img
           src= {Logo}
+          alt= "SockBot Submark"
         />
       </div>
 

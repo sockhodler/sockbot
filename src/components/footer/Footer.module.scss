@@ -4,13 +4,15 @@
   align-items: stretch;
   justify-content: center;
   background: var(--color-black);
+  position: relative;
+  z-index: 4;
 }
 
 
 .footer_content {
   width: 90%;
   height: 90%;
-
+  z-index: 5;
   justify-content: space-between;
   align-items:  center;
   display: flex;

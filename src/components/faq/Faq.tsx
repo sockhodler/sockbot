@@ -7,7 +7,7 @@ function Section(props:any) {
     const config = {
       duration: 750,
     };
-    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse(config);
+    const { getCollapseProps, getToggleProps } = useCollapse(config);
 return (
     <div className = {classes.collapsible}>
         <div className={classes.header} {...getToggleProps()}>
@@ -27,7 +27,7 @@ const Faq = () => {
     return (
       <div id = "faq" className = {classes.faq_wrapper}>
         <div className = {classes.faq_circles}>
-        
+
         </div>
         <div className = {classes.faq_content}>
           <h2>FAQ</h2>

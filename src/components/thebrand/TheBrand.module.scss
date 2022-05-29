@@ -6,6 +6,8 @@
   height: 625px;
   background: url('../../images/thebrand-bg.jpg') no-repeat center top;
   background-size: cover;
+  z-index: 5;
+  position: relative;
 }
 
 
@@ -47,7 +49,7 @@
   &__bot {
     position: absolute;
     z-index: 3;
-    left: 12%;
+    left: 10%;
     top: 10%;
   }
 
@@ -56,7 +58,7 @@
 .capsule {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  padding: 0 3rem;
+  padding: 1rem 3rem;
   border-radius: 500px;
   background: var(--color-white);
   display: flex;

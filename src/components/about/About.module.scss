@@ -4,58 +4,52 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url('../../images/about-bg.jpg') no-repeat center top;
+  background: url('../../images/about-bg-circles.jpg') no-repeat center top;
   background-size: cover;
   position: relative;
+  z-index: 4;
 }
-.about_circles {
-  background: url('../../images/circles.svg') no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 1365px;
-  position: absolute;
-  left: 0rem;
-  top: -10rem;
-  z-index: 2;
-  mix-blend-mode: overlay;
-  overflow: hidden;
-
-}
+// .about_circles {
+//   background: url('../../images/circles.svg') no-repeat;
+//   background-size: cover;
+//   width: 100vw;
+//   height: 1365px;
+//   position: absolute;
+//   left: 0rem;
+//   top: -10rem;
+//   z-index: 5;
+//   mix-blend-mode: overlay;
+//   overflow: hidden;
+// }
 
 .about_content {
   width: 90%;
-  height: 90%;
   border: .1rem var(--color-hot-pink) solid;
   background: linear-gradient(
      to left,
-     transparentize(rgb(117,6,143), .7),
-     transparentize(rgb(8,10,46), .7)
+     rgba(117,6,143,.7),
+     rgba(8,10,46,.7)
    );
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: row;
   border-radius: 2rem;
-  padding: 10% 5% 10% 5%;
   position: relative;
   z-index: 10;
+  padding: 5rem;
 
-  &__about_left {
-    width: 100%;
+  &__left {
+    width: 50%;
+    margin: auto;
   }
 
-  &__about_right {
-    width: 100%;
-  }
-
-  &__card1 {
-
-    background-color: var(--color-dark-violet);
-  }
-
-  &__card2 {
-
-    background-color: var(--color-cyan);
+  &__right {
+    width: 50%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
   }
 
   & p{
@@ -71,4 +65,21 @@
        rgb(49,10,63),
      );
   }
+}
+.card1 {
+  width: 415px;
+  height: 585px;
+  background-color: var(--color-dark-violet);
+  position: absolute;
+  top: 0;
+  z-index: 20;
+}
+
+.card2 {
+  width: 415px;
+  height: 585px;
+  background-color: var(--color-cyan);
+  position: absolute;
+  top: 0;
+  z-index: 30;
 }
