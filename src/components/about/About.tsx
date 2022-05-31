@@ -3,7 +3,7 @@ import * as React from 'react';
 // import { Link } from "react-scroll";
 import classes from './About.module.scss';
 
-const About = () => {
+export const About: React.FunctionComponent = () => {
 // ***** Finish Formatting This Section **** //
 
   return (
@@ -30,16 +30,9 @@ const About = () => {
 
         </div>
         <div className = {classes.about_content__right}>
-          <div className = {classes.card1}>
-            gggg
-          </div>
-          <div className = {classes.card2}>
-            gggg
-          </div>
+
         </div>
       </div>
     </div>
   )
 }
-
-export default About

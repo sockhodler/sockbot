@@ -1,5 +1,6 @@
+@import "../../styles/abstract/mixins";
+
 .about_wrapper {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,19 +9,8 @@
   background-size: cover;
   position: relative;
   z-index: 4;
+  width: 100vw;
 }
-// .about_circles {
-//   background: url('../../images/circles.svg') no-repeat;
-//   background-size: cover;
-//   width: 100vw;
-//   height: 1365px;
-//   position: absolute;
-//   left: 0rem;
-//   top: -10rem;
-//   z-index: 5;
-//   mix-blend-mode: overlay;
-//   overflow: hidden;
-// }
 
 .about_content {
   width: 90%;
@@ -37,19 +27,29 @@
   border-radius: 2rem;
   position: relative;
   z-index: 10;
-  padding: 5rem;
+  padding: 10rem;
+  margin: 10rem auto 10rem auto;
+
+  @include respond (sm) {
+    padding: 2rem;
+    font-size: 1.6rem;
+    margin: 5rem auto 5rem auto;
+  }
 
   &__left {
     width: 50%;
-    margin: auto;
+
+    @include respond(sm) {
+      width: 100%;
+    }
   }
 
   &__right {
     width: 50%;
-    margin: auto;
-    position: relative;
-    display: flex;
-    align-items: center;
+
+    @include respond(sm) {
+      display: none;
+    }
   }
 
   & p{
@@ -57,8 +57,11 @@
   }
 
   &__button {
+    display: block;
+    text-align: center;
     padding: 2rem;
-    border-radius: 20%/50%;
+    margin-bottom: 5rem;
+    border-radius: 500px;
     background: linear-gradient(
        to left,
        rgb(137,16,165),
@@ -67,17 +70,18 @@
   }
 }
 .card1 {
-  width: 415px;
-  height: 585px;
+  width: 41.5rem;
+  height: 58.5rem;
   background-color: var(--color-dark-violet);
   position: absolute;
   top: 0;
+  right:0;
   z-index: 20;
 }
 
 .card2 {
-  width: 415px;
-  height: 585px;
+  width: 41.5rem;
+  height: 58.5rem;
   background-color: var(--color-cyan);
   position: absolute;
   top: 0;

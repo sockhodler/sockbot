@@ -1,9 +1,11 @@
+@import "../../styles/abstract/mixins";
+
 .thebrand_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 625px;
+  min-height: 62.5rem;
   background: url('../../images/thebrand-bg.jpg') no-repeat center top;
   background-size: cover;
   z-index: 5;
@@ -25,32 +27,38 @@
   }
 
   &__left {
+    width: 50%;
+    height: 100%;
     margin: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: shrink;
+    mix-blend-mode: overlay;
+    background: url('../../images/SH-Submark.svg') no-repeat center top;
+    opacity: 75%;
 
+    @include respond(sm) {
+      display: none;
+    }
   }
 
   &__right {
+    width: 50%;
     flex-direction: column;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    text-align: center;
 
-  &__shsubmark {
-    width: 600px;
-    mix-blend-mode: overlay;
-    z-index: 2;
-    position: relative;
-    opacity: 50%;
+    @include respond(sm) {
+      width: 75%;
+    }
 
-  }
-
-  &__bot {
-    position: absolute;
-    z-index: 3;
-    left: 10%;
-    top: 10%;
+    @include respond(xs) {
+      width: 95%;
+    }
   }
 
 }

@@ -2,14 +2,14 @@ import * as React from 'react';
 // import { Link } from "react-router-dom";
 import classes from './Story.module.scss';
 
-const Story = () => {
+export const Story: React.FunctionComponent = () => {
 // ***** Finish Formatting This Section **** //
   return (
     <div id = "story" className = {classes.story_wrapper}>
-      <div className = {classes.lines}></div>
-      
-      <div className = {classes.story_content}>
 
+
+      <div className = {classes.story_content}>
+        
           <h2>Story</h2>
           <h3>Chapter 1 - The Reboot</h3>
           <p>
@@ -55,5 +55,3 @@ const Story = () => {
     </div>
   )
 }
-
-export default Story

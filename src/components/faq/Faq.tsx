@@ -23,7 +23,7 @@ return (
     </div>
     );
 }
-const Faq = () => {
+export const Faq: React.FunctionComponent = () => {
     return (
       <div id = "faq" className = {classes.faq_wrapper}>
         <div className = {classes.faq_circles}>
@@ -57,4 +57,3 @@ const Faq = () => {
     </div>
     );
 }
-export default Faq;

@@ -4,7 +4,6 @@ import classes from './TheBrand.module.scss';
 import RedditIcon from '../../images/SH-Reddit.svg';
 import DiscordIcon from '../../images/SH-Discord.svg';
 import TwitterIcon from '../../images/SH-Twitter.svg';
-import SHSubmark from '../../images/SH-Submark.svg';
 import Bot from '../../images/bot.png';
 
 const shurl = "https://www.sockhodler.com";
@@ -17,14 +16,13 @@ function Data(props:any) {
 }
 
 
-const TheBrand = () => {
+export const TheBrand: React.FunctionComponent = () => {
 // ***** Finish Formatting This Section **** //
   return (
     <div id = "thebrand" className = {classes.thebrand_wrapper}>
       <div className = {classes.thebrand_content}>
         <div className = {classes.thebrand_content__left}>
-          <img src = {SHSubmark} className = {classes.thebrand_content__shsubmark} alt = "SockBot SHSubmark" />
-          <img src = {Bot} className = {classes.thebrand_content__bot}  alt = "Robot" />
+          <img src = {Bot} className = {classes.bot}  alt = "Robot" />
         </div>
 
         <div className = {classes.thebrand_content__right}>
@@ -45,5 +43,3 @@ const TheBrand = () => {
     </div>
   )
 }
-
-export default TheBrand

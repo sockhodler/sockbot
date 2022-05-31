@@ -1,3 +1,5 @@
+@import "../../styles/abstract/mixins";
+
 .faq_wrapper {
   display: flex;
   flex-direction: column;
@@ -24,12 +26,10 @@
 }
 
 .faq_content {
-
-  padding: 5% 5% 5% 10%;
   position: relative;
+  padding: 5rem;
   z-index: 10;
   margin: 10rem 0 10rem 0;
-
 
   & p {
     margin: 4rem 0;
@@ -50,6 +50,10 @@
   );
   border-radius: 15px;
   padding: 3rem 3rem 3rem 5rem;
+
+  @include respond(sm) {
+    padding: 2rem;
+  }
 }
 
 .collapsible .content {
@@ -60,4 +64,8 @@
     font-size: 3.2rem;
     text-transform: uppercase;
     font-weight: 600;
+
+    @include respond(sm) {
+      font-size: 2rem;
+    }
 }

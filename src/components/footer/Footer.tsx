@@ -13,7 +13,7 @@ function Data(props:any) {
   );
 }
 
-const Footer = () => {
+export const Footer: React.FunctionComponent = () => {
   return (
     <div className = {classes.footer_wrapper}>
       <div className = {classes.footer_content}>
@@ -77,5 +77,3 @@ const Footer = () => {
     </div>
   )
 }
-
-export default Footer

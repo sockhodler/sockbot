@@ -1,3 +1,5 @@
+@import "../../styles/abstract/mixins";
+
 .header {
   display: flex;
   flex-direction: row;
@@ -11,7 +13,15 @@
 }
 
 .logo {
-  margin: 5rem 20rem auto 10rem;
+  margin: 5rem 10rem auto 10rem;
+
+  @include respond(md) {
+    margin: 4rem 4rem auto 4rem;
+  }
+
+  @include respond(sm) {
+    margin: 4rem auto 4rem auto;
+  }
 }
 .navigation {
   width: 100%;
@@ -29,9 +39,70 @@
     font-weight: 500;
     letter-spacing: 6px;
     cursor: pointer;
+
+    @include respond(md) {
+      font-size: 1.4rem;
+    }
   }
 
   &__link:hover {
     color: var(--color-hot-pink);
+  }
+
+  @include respond(sm) {
+    display: none;
+  }
+}
+
+.connect_button_wrapper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  p {
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0;
+
+    &:hover {
+        color: #ddd;
+    }
+  }
+}
+
+.button {
+  min-width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #44f8bd;
+  background: transparent;
+  white-space: nowrap;
+  padding: 25px 25px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    background: #44f8bd;
+    color: black;
+
+    img {
+      filter: invert(1);
+      -webkit-filter: invert(1)
+    }
   }
 }

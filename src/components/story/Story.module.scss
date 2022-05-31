@@ -1,26 +1,15 @@
+@import "../../styles/abstract/mixins";
+
 .story_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // padding: 0 10% 0 10%;
   background: url('../../images/story-bg.jpg') no-repeat center top;
   background-size: cover;
   position: relative;
   z-index: 4;
-}
-
-.lines {
-  background: url('../../images/lines.svg') no-repeat;
-  width: 1440px;
-  height: 1200px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 2;
-  mix-blend-mode: overlay;
-  overflow: hidden;
-  z-index: 5;
+  width: 100vw;
 }
 
 .story_content {
@@ -34,8 +23,17 @@
   border-radius: 2rem;
   padding: 5% 5% 5% 5%;
   position: relative;
-  z-index: 10;
-  margin: 20rem auto 20rem auto;
+  z-index: 12;
+  margin: 10rem auto 10rem auto;
+
+  @include respond(md) {
+    font-size: 2rem;
+  }
+
+  @include respond(sm) {
+    margin: 5rem auto 5rem auto;
+    font-size: 1.6rem;
+  }
 
   & p{
     margin: 4rem 0;

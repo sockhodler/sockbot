@@ -1,10 +1,11 @@
 import * as React from 'react';
 // import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
+import { ConnectWallet } from '../ConnectWallet/ConnectWallet';
 import classes from './Header.module.scss';
 import Logo from "../../images/logo.png";
 
-const Header = () => {
+export const Header: React.FunctionComponent = () => {
 
   return (
     <div className= {classes.header}>
@@ -65,8 +66,13 @@ const Header = () => {
 
       </nav>
 
+      {
+      // <div className = {classes.connect_button_wrapper} >
+      // <ConnectWallet />
+      //
+      // </div>
+      }
+
     </div>
   )
 }
-
-export default Header
