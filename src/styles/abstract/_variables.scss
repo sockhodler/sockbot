@@ -6,6 +6,38 @@
   --fonts-made-soulmaze: "made-soulmaze", sans-serif;
   --fonts-made-soulmaze-outline: "made-soulmaze-outline", sans-serif;
 
+  // cards
+  --card-width-sl: 41.5rem;
+  --card-top-sl: 10rem;
+  --card-right-sl: 20rem;
+  --card-padding-sl: 1.5rem 3rem 3rem 3rem;
+
+  --card-width-xl: 41.5rem;
+  --card-top-xl: 10rem;
+  --card-right-xl: 13rem;
+  --card-padding-xl: 1.5rem 3rem 3rem 3rem;
+
+  --card-width-lg: 41.5rem;
+  --card-top-lg: 10rem;
+  --card-right-lg: 7rem;
+  --card-padding-lg: 1.5rem 3rem 3rem 3rem;
+
+  --card-width-md: 35rem;
+  --card-top-md: 10rem;
+  --card-right-md: 5rem;
+  --card-padding-md: 1rem 2rem 2rem 2rem;
+
+  --card-width-sm: 15rem;
+  --card-top-sm: 10rem;
+  --card-right-sm: 5rem;
+  --card-padding-sm: 1.5rem 3rem 3rem 3rem;
+
+  --card-width-xs: 30rem;
+  --card-top-xs: 10rem;
+  --card-right-xs: 5rem;
+  --card-padding-xs: 1.5rem 3rem 3rem 3rem;
+
+
   // colors
   --color-dark-violet: #2d093b;
   --color-dark-violet-1: #501659;
@@ -56,6 +88,17 @@
 
   --color-grad-maroon-light: rgb(64,0,49);
   --color-grad-maroon-dark: rgb(6,27,51);
+
+  --color-nft-grad-blue: rgb(3,182,217);
+  --color-nft-grad-purp: rgb(159,41,186);
+
+  --color-button-grad-purp: rgb(123,4,137);
+  --color-button-grad-blue: rgb(12,150,200);
+  --color-button-grad-orange: rgb(227,112,94);
+
+  --color-pink-glow: rgba(252, 1, 116, .5);
+
+  --border: 5px;
 
   // ? apple buttons blue color css apple fix?
   -apple-system-blue: inherit;

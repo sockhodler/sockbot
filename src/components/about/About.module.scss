@@ -1,4 +1,5 @@
 @import "../../styles/abstract/mixins";
+@import "../../styles/abstract/variables";
 
 .about_wrapper {
   display: flex;
@@ -9,7 +10,7 @@
   background-size: cover;
   position: relative;
   z-index: 4;
-  width: 100vw;
+
 }
 
 .about_content {
@@ -27,13 +28,38 @@
   border-radius: 2rem;
   position: relative;
   z-index: 10;
-  padding: 10rem;
   margin: 10rem auto 10rem auto;
 
-  @include respond (sm) {
+  @include respond(sl) {
+    padding: 15rem;
+
+  }
+
+  @include respond(xl) {
+    padding: 15rem;
+
+  }
+
+  @include respond(lg) {
+    padding: 10rem;
+
+  }
+
+  @include respond(md) {
+    padding: 5rem;
+
+  }
+
+  @include respond(sm) {
     padding: 2rem;
     font-size: 1.6rem;
-    margin: 5rem auto 5rem auto;
+
+  }
+
+  @include respond(xs) {
+    padding: 2rem;
+    font-size: 1.6rem;
+
   }
 
   &__left {
@@ -50,9 +76,10 @@
     @include respond(sm) {
       display: none;
     }
+
   }
 
-  & p{
+  & p {
     margin: 4rem 0;
   }
 
@@ -61,29 +88,197 @@
     text-align: center;
     padding: 2rem;
     margin-bottom: 5rem;
+    background:
+      linear-gradient(
+        to bottom,
+        rgb(137,16,165),
+        rgb(49,10,63),
+        ) padding-box,
+        linear-gradient(to top, var(--color-button-grad-purp), var(--color-button-grad-blue), var(--color-button-grad-orange)) border-box;
     border-radius: 500px;
-    background: linear-gradient(
-       to left,
-       rgb(137,16,165),
-       rgb(49,10,63),
-     );
+    border: 2px solid transparent;
+    transition: all .7s;
   }
+
+  &__button:hover {
+     box-shadow: 0rem 0rem 2rem var(--color-pink-glow);
+     filter: hue-rotate(-15deg);
+     transform: scale(1.03);
+  }
+
 }
+
 .card1 {
-  width: 41.5rem;
-  height: 58.5rem;
-  background-color: var(--color-dark-violet);
   position: absolute;
-  top: 0;
-  right:0;
   z-index: 20;
+  background:
+    linear-gradient(var(--color-dark-violet-4), var(--color-dark-violet)) padding-box,
+    linear-gradient(to left, var(--color-nft-grad-blue), var(--color-nft-grad-purp)) border-box;
+  border-radius: 1em;
+  border: 2px solid transparent;
+  padding: 0;
+  transition: all .4s;
+  box-shadow: 0rem 0rem 2rem var(--color-pink-glow);
+  transform: rotate(5deg);
+
+  @include respond(sl) {
+    width: var(--card-width-sl);
+    top: var(--card-top-sl);
+    right: var(--card-right-sl);
+  }
+
+  @include respond(xl) {
+    width: var(--card-width-xl);
+    top: var(--card-top-xl);
+    right: var(--card-right-xl);
+  }
+
+  @include respond(lg) {
+    width: var(--card-width-lg);
+    top: var(--card-top-lg);
+    right: var(--card-right-lg);
+  }
+
+  @include respond(md) {
+    width: var(--card-width-md);
+    top: var(--card-top-md);
+    right: var(--card-right-md);
+  }
+
+  @include respond(sm) {
+    width: var(--card-width-sm);
+    top: var(--card-top-sm);
+    right: var(--card-right-sm);
+  }
+
+  @include respond(xs) {
+    width: var(--card-width-xs);
+    top: var(--card-top-xs);
+    right: var(--card-right-xs);
+  }
+
+  &__content {
+
+
+    @include respond(sl) {
+      padding: var(--card-padding-sl);
+    }
+
+    @include respond(xl) {
+      padding: var(--card-padding-sl);
+    }
+
+    @include respond(lg) {
+      padding: var(--card-padding-lg);
+    }
+
+    @include respond(md) {
+      padding: var(--card-padding-md);
+    }
+
+    @include respond(sm) {
+      padding: var(--card-padding-sm);
+    }
+
+    @include respond(xs) {
+      padding: var(--card-padding-xs);
+    }
+  }
+
+  & img {
+    width: 100%;
+    border-radius: inherit;
+    transition: all 1.15s;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, .35);
+
+  }
+  & img:hover {
+    transform: scale(1.05);
+    box-shadow: 0rem 0rem 2rem var(--color-pink-glow);
+  }
 }
 
 .card2 {
-  width: 41.5rem;
-  height: 58.5rem;
-  background-color: var(--color-cyan);
   position: absolute;
-  top: 0;
-  z-index: 30;
+  top: 12rem;
+  right:10rem;
+  z-index: 19;
+  background:
+    linear-gradient(var(--color-dark-violet-4), var(--color-dark-violet)) padding-box,
+    linear-gradient(to left, var(--color-nft-grad-blue), var(--color-nft-grad-purp)) border-box;
+  border-radius: 1em;
+  border: 2px solid transparent;
+  padding: 0;
+  box-shadow: 0rem 0rem 2rem var(--color-pink-glow);
+
+  @include respond(sl) {
+    width: var(--card-width-sl);
+    top: var(--card-top-sl);
+    right: var(--card-right-sl);
+  }
+
+  @include respond(xl) {
+    width: var(--card-width-xl);
+    top: var(--card-top-xl);
+    right: var(--card-right-xl);
+  }
+
+  @include respond(lg) {
+    width: var(--card-width-lg);
+    top: var(--card-top-lg);
+    right: var(--card-right-lg);
+  }
+
+  @include respond(md) {
+    width: var(--card-width-md);
+    top: var(--card-top-md);
+    right: var(--card-right-md);
+  }
+
+  @include respond(sm) {
+    width: var(--card-width-sm);
+    top: var(--card-top-sm);
+    right: var(--card-right-sm);
+  }
+
+  @include respond(xs) {
+    width: var(--card-width-xs);
+    top: var(--card-top-xs);
+    right: var(--card-right-xs);
+  }
+
+  &__content {
+
+
+    @include respond(sl) {
+      padding: var(--card-padding-sl);
+    }
+
+    @include respond(xl) {
+      padding: var(--card-padding-sl);
+    }
+
+    @include respond(lg) {
+      padding: var(--card-padding-lg);
+    }
+
+    @include respond(md) {
+      padding: var(--card-padding-md);
+    }
+
+    @include respond(sm) {
+      padding: var(--card-padding-sm);
+    }
+
+    @include respond(xs) {
+      padding: var(--card-padding-xs);
+    }
+  }
+
+  & img {
+    width: 100%;
+    border-radius: inherit;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, .35);
+
+  }
 }

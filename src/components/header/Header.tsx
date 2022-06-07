@@ -66,13 +66,6 @@ export const Header: React.FunctionComponent = () => {
 
       </nav>
 
-      {
-      // <div className = {classes.connect_button_wrapper} >
-      // <ConnectWallet />
-      //
-      // </div>
-      }
-
     </div>
   )
 }

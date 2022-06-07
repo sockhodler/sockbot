@@ -10,6 +10,7 @@ import { Footer } from './components/Footer/Footer';
 import './styles/base/_base.scss';
 
 function App() {
+
   return (
 
     <main>

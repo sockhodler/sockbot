@@ -7,9 +7,20 @@ import RedditIcon from '../../images/SH-Reddit.svg';
 import DiscordIcon from '../../images/SH-Discord.svg';
 import TwitterIcon from '../../images/SH-Twitter.svg';
 
+const shurl = "https://www.sockhodler.com";
+
+const twitterUrl = "https://twitter.com/SockHodler";
+const twitterAlt = "SockHodler Twitter";
+
+const redditUrl = "https://www.reddit.com/r/sockHODLER/";
+const redditAlt = "SockHodler Subreddit";
+
+const discordUrl = "https://discord.gg/8zD6BnTup2";
+const discordAlt = "SockHodler Discord";
+
 function Data(props:any) {
   return (
-    <a href = {props.url}><img src={props.img} className = {classes.social} alt = {props.alt} /></a>
+    <a href = {props.url} target="_blank" rel="noreferrer"><img src={props.img} className = {classes.social} alt = {props.alt} /></a>
   );
 }
 
@@ -17,7 +28,9 @@ export const Footer: React.FunctionComponent = () => {
   return (
     <div className = {classes.footer_wrapper}>
       <div className = {classes.footer_content}>
-        <img src = {SHFullLogo} className = {classes.footer_content__logo} alt = "SockBot Logo" />
+        <a href = {shurl} className = {classes.footer_content__logo} target="_blank" rel="noreferrer">
+          <img src = {SHFullLogo} alt = "SockBot Logo" />
+        </a>
 
         <nav className = {classes.footer_content__menu}>
           <Link
@@ -68,9 +81,9 @@ export const Footer: React.FunctionComponent = () => {
         </nav>
 
         <div className = {classes.footer_content__social} >
-          <Data url="#" img={TwitterIcon} alt = "Twitter Icon" />
-          <Data url="#" img={RedditIcon} alt = "Reddit Icon" />
-          <Data url="#" img={DiscordIcon} alt = "Discord Icon" />
+          <Data url={twitterUrl} img={TwitterIcon} alt = {twitterAlt} />
+          <Data url={redditUrl} img={RedditIcon} alt = {redditAlt} />
+          <Data url={discordUrl} img={DiscordIcon} alt = {discordAlt} />
         </div>
 
       </div>

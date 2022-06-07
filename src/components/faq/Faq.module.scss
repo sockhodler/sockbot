@@ -21,15 +21,14 @@
   top: -50rem;
   z-index: 5;
   mix-blend-mode: overlay;
-  overflow: hidden;
-
 }
 
 .faq_content {
   position: relative;
-  padding: 5rem;
   z-index: 10;
   margin: 10rem 0 10rem 0;
+  width: 80%;
+  padding: 10rem;
 
   & p {
     margin: 4rem 0;
@@ -54,11 +53,13 @@
   @include respond(sm) {
     padding: 2rem;
   }
+
 }
 
 .collapsible .content {
 
 }
+
 .collapsible .header {
     cursor: pointer;
     font-size: 3.2rem;
