@@ -19,7 +19,7 @@ jobs:
         KEY: ${{ secrets.SSHKEY }}
       with:
         source: "."
-        target: "~/sockbotnft.com/staging"
+        target: "/sockbotnft.com/staging"
 
     - name: Executing remote command
       uses: appleboy/ssh-action@master
