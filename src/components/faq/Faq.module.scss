@@ -26,9 +26,42 @@
 .faq_content {
   position: relative;
   z-index: 10;
-  margin: 10rem 0 10rem 0;
-  width: 80%;
-  padding: 10rem;
+
+  @include respond(sl) {
+    margin: 10rem 0 10rem 0;
+    width: 70%;
+    padding: 15rem;
+  }
+
+  @include respond(xl) {
+    margin: 10rem 0 10rem 0;
+    width: 80%;
+    padding: 10rem;
+  }
+
+  @include respond(lg) {
+    margin: 10rem 0 10rem 0;
+    width: 80%;
+    padding: 10rem;
+  }
+
+  @include respond(md) {
+    margin: 5rem 0 10rem 0;
+    width: 100%;
+    padding: 10rem;
+  }
+
+  @include respond(sm) {
+    margin: 5rem 0 5rem 0;
+    width: 100%;
+    padding: 4rem;
+  }
+
+  @include respond(xs) {
+    margin: 5rem 0 5rem 0;
+    width: 100%;
+    padding: 2rem;
+  }
 
   & p {
     margin: 4rem 0;
@@ -48,10 +81,32 @@
    rgba(6,27,51,.5)
   );
   border-radius: 15px;
-  padding: 3rem 3rem 3rem 5rem;
+
+
+  @include respond(sl) {
+    padding: 3rem 3rem 3rem 5rem;
+  }
+
+  @include respond(xl) {
+    padding: 3rem 3rem 3rem 5rem;
+  }
+
+  @include respond(lg) {
+    padding: 3rem 3rem 3rem 5rem;
+  }
+
+  @include respond(md) {
+    padding: 3rem 3rem 3rem 5rem;
+  }
 
   @include respond(sm) {
     padding: 2rem;
+    font-size: 1.6rem;
+  }
+
+  @include respond(xs) {
+    padding: 3rem;
+    font-size: 1.6rem;
   }
 
 }

@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import { Link } from "react-router-dom";
 import classes from './Faq.module.scss';
 import useCollapse from 'react-collapsed';
 

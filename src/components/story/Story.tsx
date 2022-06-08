@@ -1,15 +1,13 @@
 import * as React from 'react';
-// import { Link } from "react-router-dom";
 import classes from './Story.module.scss';
 
 export const Story: React.FunctionComponent = () => {
-// ***** Finish Formatting This Section **** //
+
   return (
     <div id = "story" className = {classes.story_wrapper}>
 
-
       <div className = {classes.story_content}>
-        
+
           <h2>Story</h2>
           <h3>Chapter 1 - The Reboot</h3>
           <p>
@@ -18,6 +16,8 @@ export const Story: React.FunctionComponent = () => {
           <p>
             Re-energized in an unrecognizable place, SockBot awakens to find the world around him in ruin.  His creator is nowhere in sight.
             He tries to stand up but the weight of the soot-colored sand keeps pulling him down. After soaking in the sun, he was able to gain enough energy to stand up and look around.
+          </p>
+          <p>
             Unfortunately, not too far from SockBot, was the remains of a city. He began taking a few steps forward. All of a sudden, a flood of memories swept over SockBot.
           </p>
           <p>

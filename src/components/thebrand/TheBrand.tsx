@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import { Link } from "react-router-dom";
 import classes from './TheBrand.module.scss';
 import Bot from '../../images/bot.png';
 import RedditIcon from '../../images/SH-Reddit.svg';
@@ -26,7 +25,6 @@ function Data(props:any) {
 
 
 export const TheBrand: React.FunctionComponent = () => {
-// ***** Finish Formatting This Section **** //
   return (
     <div id = "thebrand" className = {classes.thebrand_wrapper}>
       <div className = {classes.thebrand_content}>
@@ -45,8 +43,6 @@ export const TheBrand: React.FunctionComponent = () => {
             <Data url={discordUrl} alt={discordAlt} img={DiscordIcon} />
           </div>
         </div>
-
-
 
       </div>
     </div>

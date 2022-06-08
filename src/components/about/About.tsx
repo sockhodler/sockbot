@@ -1,10 +1,7 @@
 import * as React from 'react';
-// import { Link } from "react-router-dom";
-// import { Link } from "react-scroll";
 import classes from './About.module.scss';
 
 export const About: React.FunctionComponent = () => {
-// ***** Finish Formatting This Section **** //
 
   return (
     <div id = "about" className = {classes.about_wrapper}>

@@ -1,11 +1,9 @@
 import * as React from 'react';
-// import { Link } from "react-router-dom";
 import classes from './Hero.module.scss';
-// import classNames from "classnames";
 import FullLogo from '../../images/sockbot-logo-wht.svg';
 
 export const Hero: React.FunctionComponent = () => {
-// ***** Finish Formatting This Section **** //
+
   return (
     <div id = "home" className = {classes.hero_wrapper}>
       <div className = {classes.hero_content}>

@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
 import { ConnectWallet } from '../ConnectWallet/ConnectWallet';
 import classes from './Header.module.scss';
@@ -10,10 +9,12 @@ export const Header: React.FunctionComponent = () => {
   return (
     <div className= {classes.header}>
       <div className={classes.logo}>
-        <img
-          src= {Logo}
-          alt= "SockBot Submark"
-        />
+        <a href = "https://www.sockhodler.com" target = "_blank">
+          <img
+            src= {Logo}
+            alt= "SockBot Submark"
+          />
+        </a>
       </div>
 
       <nav className={classes.navigation}>

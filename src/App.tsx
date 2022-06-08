@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Helmet } from 'react-helmet';
 import { Header } from './components/Header/Header';
 import { Hero } from './components/Hero/Hero';
 import { About } from './components/About/About';
@@ -14,7 +14,10 @@ function App() {
   return (
 
     <main>
-      <title>Home Page</title>
+      <Helmet>
+        <title>SockBot - Algorand NFT Collection - Created by SockHodler</title>
+        <meta name="author" content="SockHodler" />
+      </Helmet>
       <Header />
       <Hero />
       <About />

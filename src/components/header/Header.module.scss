@@ -9,7 +9,7 @@
   height: 100px;
   background: transparent;
   position: absolute;
-  
+
   width: 100%;
   transition: all .7s ease-in;
 }
@@ -37,6 +37,15 @@
   @include respond(sm) {
     margin: 4rem auto 4rem auto;
   }
+
+  & a img {
+    transition: all .45s ease-in-out;
+    transform: scale(1);
+  }
+
+  & a:hover img {
+    transform: scale(1.05);
+  }
 }
 
 .navigation {
@@ -49,7 +58,7 @@
   &__link {
     border-radius: 10rem;
     padding: 2rem 2rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.45s ease-in-out;
     font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 500;
@@ -63,6 +72,7 @@
 
   &__link:hover {
     color: var(--color-hot-pink);
+    transform: scale(1.05);
   }
 
   @include respond(sm) {
