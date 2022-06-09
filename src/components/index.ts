@@ -1,5 +1,3 @@
-// Connect Wallet
-export {ConnectWallet} from "./ConnectWallet/ConnectWallet";
 
 // Single Page Components
 export { About } from "./About/About";

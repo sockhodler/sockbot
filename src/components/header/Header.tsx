@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from "react-scroll";
-import { ConnectWallet } from '../ConnectWallet/ConnectWallet';
+// import { ConnectWallet } from '../ConnectWallet/ConnectWallet';
 import classes from './Header.module.scss';
 import Logo from "../../images/logo.png";
 
