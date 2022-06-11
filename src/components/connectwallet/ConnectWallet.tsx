@@ -34,11 +34,13 @@ export const ConnectWallet:React.FunctionComponent = () => {
   }
 
   return (
-    <button
-      className = {classes.btn}
-      onClick={connectToMyAlgo}>
-      {isConnected}
-    </button>
+    <div>
+      <button
+        className = {classes.btn}
+        onClick={connectToMyAlgo}>
+        {isConnected}
+      </button>
+    </div>
   );
 
 }
