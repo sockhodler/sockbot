@@ -1,7 +1,29 @@
-import * as React from 'react';
+import React, {useEffect, useState } from 'react';
+import useImagePreloader from '../../hooks/useImagePreloader'
 import classes from './About.module.scss';
 
+import Image1 from '../../images/image1.jpg'
+import Image2 from '../../images/image2.jpg'
+import Image3 from '../../images/image3.jpg'
+import Image4 from '../../images/image4.jpg'
+import Image5 from '../../images/image5.jpg'
+
+const preloadSrcList: string[] = [
+  Image1,
+  Image2,
+  Image3,
+  Image4,
+  Image5
+]
+
+let index = Math.floor(Math.random() * preloadSrcList.length);
+
 export const About: React.FunctionComponent = () => {
+  const { imagesPreloaded } = useImagePreloader(preloadSrcList)
+
+  if (!imagesPreloaded) {
+    return <p>Preloading Assets</p>
+  }
 
   return (
     <div id = "about" className = {classes.about_wrapper}>
@@ -28,7 +50,7 @@ export const About: React.FunctionComponent = () => {
         </div>
         <div className = {classes.about_content__right}>
           <div className = {classes.card1}>
-            <img src= "/images/test-nft.png" alt = "test nft" />
+            <img src= {preloadSrcList[index]} alt = "test nft" />
             <div className = {classes.card1__content}>
               <h3>
                 SockBot #1112
@@ -40,7 +62,7 @@ export const About: React.FunctionComponent = () => {
           </div>
 
           <div className = {classes.card2}>
-            <img src= "/images/test-nft.png" alt = "test nft"/>
+            <img src= { Image2 } alt = "test nft"/>
             <div className = {classes.card1__content}>
               <h3>
                 SockBot #1112

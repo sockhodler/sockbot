@@ -7,3 +7,5 @@ export { Footer } from "./footer/Footer";
 export { Hero } from "./hero/Hero";
 export { Story } from "./story/Story";
 export { TheBrand } from "./thebrand/TheBrand";
+
+export { ConnectWallet } from "./connectwallet/ConnectWallet";

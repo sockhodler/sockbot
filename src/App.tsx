@@ -8,7 +8,6 @@ import { Faq } from './components/faq/Faq';
 import { TheBrand } from './components/thebrand/TheBrand';
 import { Footer } from './components/footer/Footer';
 import './styles/base/_base.scss';
-
 function App() {
 
   return (

@@ -1,13 +1,17 @@
 import * as React from 'react';
 import { Link } from "react-scroll";
-// import { ConnectWallet } from '../ConnectWallet/ConnectWallet';
 import classes from './Header.module.scss';
 import Logo from "../../images/logo.png";
+import {ConnectWallet} from "../connectwallet/ConnectWallet";
+// import { Alignment, AnchorButton, Button, Callout, Card, Elevation, Navbar, ProgressBar } from '@blueprintjs/core';
+// import { Classes, Dialog } from "@blueprintjs/core";
+
 
 export const Header: React.FunctionComponent = () => {
 
   return (
     <div className= {classes.header}>
+
       <div className={classes.logo}>
         <a href = "https://www.sockhodler.com" target = "_blank">
           <img
@@ -66,6 +70,8 @@ export const Header: React.FunctionComponent = () => {
         </Link>
 
       </nav>
+
+      <ConnectWallet />
 
     </div>
   )
