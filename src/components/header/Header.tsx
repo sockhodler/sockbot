@@ -71,7 +71,10 @@ export const Header: React.FunctionComponent = () => {
 
       </nav>
 
-      <ConnectWallet />
+      <ConnectWallet
+        // isConnected = {false}
+        // address = {addresses}
+        />
 
     </div>
   )

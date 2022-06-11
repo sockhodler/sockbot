@@ -12,12 +12,12 @@ const myAlgoConnect = new MyAlgoConnect();
 const CONNECT_WALLET = "CONNECT_WALLET"
 const DISCONNECT_WALLET = "DISCONNECT_WALLET"
 
-interface Props {
-  isConnected: boolean
-  address: string;
-}
+// interface Props {
+//   isConnected: boolean
+//   // address: string;
+// }
 
-export const ConnectWallet:React.FunctionComponent<Props> = () => {
+export const ConnectWallet:React.FunctionComponent = () => {
 
   const [isConnected, setWalletConnected] = useState('Connect Wallet');
 
@@ -26,7 +26,7 @@ export const ConnectWallet:React.FunctionComponent<Props> = () => {
         const accounts = await myAlgoConnect.connect()
         setWalletConnected('Disconnect')
 
-        const addresses = accounts.map(account => account.address);
+        // const addresses = accounts.map(account => account.address);
 
     } catch (err) {
         console.error(err);
