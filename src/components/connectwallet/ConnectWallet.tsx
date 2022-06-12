@@ -25,8 +25,15 @@ export const ConnectWallet:React.FunctionComponent = () => {
     try {
         const accounts = await myAlgoConnect.connect()
         setWalletConnected('Disconnect')
-        console.log(accounts)
-        // const addresses = accounts.map(account => account.address);
+
+        const addresses = accounts.map(account => account.address);
+
+        if (addresses) {
+            localStorage.setItem("myAlgoAddress", addresses[0])
+            console.log(localStorage);
+        }
+
+        console.log(addresses)
 
     } catch (err) {
         console.error(err);

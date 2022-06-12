@@ -2,28 +2,69 @@ import React, {useEffect, useState } from 'react';
 import useImagePreloader from '../../hooks/useImagePreloader'
 import classes from './About.module.scss';
 
-import Image1 from '../../images/image1.jpg'
-import Image2 from '../../images/image2.jpg'
-import Image3 from '../../images/image3.jpg'
-import Image4 from '../../images/image4.jpg'
-import Image5 from '../../images/image5.jpg'
+interface NFTCard {
+  image?: any;
+  title?: string;
+  desc?: string;
+}
 
-const preloadSrcList: string[] = [
-  Image1,
-  Image2,
-  Image3,
-  Image4,
-  Image5
-]
+interface Props {
+    nftcards?: NFTCard[];
+}
 
-let index = Math.floor(Math.random() * preloadSrcList.length);
-
-export const About: React.FunctionComponent = () => {
-  const { imagesPreloaded } = useImagePreloader(preloadSrcList)
-
-  if (!imagesPreloaded) {
-    return <p>Preloading Assets</p>
+const RandomImages:React.FunctionComponent<Props> = (
+  {
+    nftcards
   }
+) => {
+
+  return (
+    <div>
+      <img src={nftcards.image} alt = "test nft" />
+      <div className = {classes.card1__content}>
+        <h3>
+          {nftcards.title}
+        </h3>
+        <p>
+          {nftcards.desc}
+        </p>
+      </div>
+    </div>
+  )
+}
+
+export const About:React.FunctionComponent = () => {
+  const preloadSrcList = [
+    {
+      image: '/images/image1.jpg',
+      title: "SOCKBOT 101",
+      desc: "This is the first description"
+    },
+    {
+      image: '/images/image2.jpg' ,
+      title: "SOCKBOT 201",
+      desc: "This is the second description"
+    },
+    {
+      image: '/images/image3.jpg' ,
+      title: "SOCKBOT 301",
+      desc: "This is the third description"
+    },
+  {
+      image: '/images/image4.jpg' ,
+      title: "SOCKBOT 401",
+      desc: "This is the fourth description"
+    },
+  {
+      image: '/images/image5.jpg',
+      title: "SOCKBOT 501",
+      desc: "This is the fifth description"
+    }
+  ]
+
+  let random = Math.floor(Math.random() * preloadSrcList.length);
+  const selectedImage = preloadSrcList[random];
+
 
   return (
     <div id = "about" className = {classes.about_wrapper}>
@@ -50,27 +91,11 @@ export const About: React.FunctionComponent = () => {
         </div>
         <div className = {classes.about_content__right}>
           <div className = {classes.card1}>
-            <img src= {preloadSrcList[index]} alt = "test nft" />
-            <div className = {classes.card1__content}>
-              <h3>
-                SockBot #1112
-              </h3>
-              <p>
-                This is a description.
-              </p>
-            </div>
+          <RandomImages nftcards={selectedImage}/>
           </div>
 
           <div className = {classes.card2}>
-            <img src= { Image2 } alt = "test nft"/>
-            <div className = {classes.card1__content}>
-              <h3>
-                SockBot #1112
-              </h3>
-              <p>
-                This is a description.
-              </p>
-            </div>
+            <RandomImages nftcards={selectedImage}/>
           </div>
 
         </div>
