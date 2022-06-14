@@ -15,11 +15,15 @@
   }
 
   @include respond(sm) {
-    height: 100vh;
+    height: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   @include respond(xs) {
-    height: 75vh;
+    height: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   &__good_bot {
@@ -123,8 +127,13 @@
 
     @include respond(sm) {
       justify-content: center;
-      width: 75%;
+      // width: 75%;
       margin: 15rem auto 10rem auto;
+    }
+    @include respond(xs) {
+      justify-content: center;
+      width: 75%;
+      margin: 15rem auto 0 auto;
     }
   }
 
@@ -153,17 +162,26 @@
 
 .logo {
   margin: 2rem auto 2rem auto;
+
+  @include respond(xs) {
+    margin: auto;
+  }
 }
 
 .bubble {
   background: var(--color-white);
   border-radius: 500px;
   padding: .5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  @include respond(sm) {
+    margin-top: 1rem;
+  }
 
   &__text {
     color: black;
@@ -199,7 +217,7 @@
 
     @include respond(sm) {
       font-size: 2.2rem;
-      padding: 2rem 7rem;
+      padding: 2rem 2rem;
     }
 
     @include respond(xs) {

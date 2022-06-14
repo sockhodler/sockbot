@@ -4,12 +4,12 @@ import classes from './About.module.scss';
 
 interface NFTCard {
   image?: any;
-  title?: string;
-  desc?: string;
+  title: string;
+  desc: string;
 }
 
 interface Props {
-    nftcards?: NFTCard[];
+    nftcards?: NFTCard[] | any;
 }
 
 const RandomImages:React.FunctionComponent<Props> = (

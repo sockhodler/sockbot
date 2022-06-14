@@ -1,25 +1,51 @@
-.btn {
-  display: block;
-  text-align: center;
-  font-size: 1.6rem;
-  margin-top: 6rem;
-  margin-right: 5rem;
-  background:
-    linear-gradient(
-      to bottom,
-      rgb(137,16,165),
-      rgb(49,10,63),
-      ) padding-box,
-      linear-gradient(to top, var(--color-button-grad-purp), var(--color-button-grad-blue), var(--color-button-grad-orange)) border-box;
-  border-radius: 500px;
-  border: 2px solid transparent;
-  transition: all .7s;
-  width: 20rem;
-  height: 6rem;
-}
+@import "../../styles/abstract/mixins";
 
-.btn:hover {
- box-shadow: 0rem 0rem 2rem var(--color-pink-glow);
- filter: hue-rotate(-15deg);
- transform: scale(1.03);
+.connect_button_wrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-right: 5rem;
+
+  @include respond(sm) {
+    margin-right: 5rem;
+  }
+  @include respond(xs) {
+    font-size: 1.4rem;
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  &__btn {
+    font-size: 1.6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background:
+      linear-gradient(
+        to bottom,
+        rgb(137,16,165),
+        rgb(49,10,63),
+        ) padding-box,
+        linear-gradient(to top, var(--color-button-grad-purp), var(--color-button-grad-blue), var(--color-button-grad-orange)) border-box;
+    border-radius: 500px;
+    border: 2px solid transparent;
+    transition: all .7s;
+    height: 6rem;
+
+    @include respond(xs) {
+      font-size: 1.4rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      height: 5rem;
+    }
+
+  }
+
+
+  &__btn:hover {
+   box-shadow: 0rem 0rem 2rem var(--color-pink-glow);
+   filter: hue-rotate(-15deg);
+   transform: scale(1.03);
+  }
+
 }

@@ -9,3 +9,5 @@ export { Story } from "./story/Story";
 export { TheBrand } from "./thebrand/TheBrand";
 
 export { ConnectWallet } from "./connectwallet/ConnectWallet";
+
+export { Layout } from "./layout/Layout";

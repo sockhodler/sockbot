@@ -76,18 +76,14 @@ button {
 button,
 input { /* 1 */
   overflow: visible;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 button,
 select { /* 1 */
   text-transform: none;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
 }
 
 [type="checkbox"],

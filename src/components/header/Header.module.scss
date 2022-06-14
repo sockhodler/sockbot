@@ -9,7 +9,8 @@
   height: 100px;
   background: transparent;
   position: absolute;
-
+  top: 2rem;
+  flex-wrap: wrap;
   width: 100%;
   transition: all .7s ease-in;
 }
@@ -28,14 +29,22 @@
 }
 
 .logo {
-  margin: 5rem 20rem auto 10rem;
+  margin-left: 5rem;
+  width: 10%;
+  justify-content: center;
+  display: flex;
 
   @include respond(md) {
-    margin: 4rem 4rem auto 4rem;
+
   }
 
   @include respond(sm) {
-    margin: 4rem auto 4rem auto;
+    margin-left: 10rem;
+  }
+  @include respond(xs) {
+    margin: auto;
+    width: 100%;
+
   }
 
   & a img {
@@ -49,11 +58,18 @@
 }
 
 .navigation {
-  width: 70%;
+  width: 60%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 5rem 10rem auto auto;
+  justify-content: center;
+
+  @include respond(md) {
+    width: 50%;
+  }
+
+  @include respond(sm) {
+    display: none;
+  }
 
   &__link {
     border-radius: 10rem;
@@ -62,11 +78,12 @@
     font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 500;
-    letter-spacing: 6px;
+    letter-spacing: 3px;
     cursor: pointer;
 
     @include respond(md) {
       font-size: 1.4rem;
+      padding: 1rem 1rem;
     }
   }
 
@@ -75,28 +92,7 @@
     transform: scale(1.05);
   }
 
-  @include respond(sm) {
-    display: none;
-  }
-}
 
-.connect_button_wrapper {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-
-  p {
-    text-align: center;
-    cursor: pointer;
-    margin: 10px 0;
-
-    &:hover {
-        color: #ddd;
-    }
-  }
 }
 
 .button {
