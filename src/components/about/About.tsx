@@ -1,9 +1,8 @@
-import React, {useEffect, useState } from 'react';
-import useImagePreloader from '../../hooks/useImagePreloader'
+import React from 'react';
 import classes from './About.module.scss';
 
 interface NFTCard {
-  image?: any;
+  image?: string;
   title: string;
   desc: string;
 }
@@ -62,7 +61,7 @@ export const About:React.FunctionComponent = () => {
     }
   ]
 
-  let random = Math.floor(Math.random() * preloadSrcList.length);
+  const random = Math.floor(Math.random() * preloadSrcList.length);
   const selectedImage = preloadSrcList[random];
 
 
@@ -83,7 +82,7 @@ export const About:React.FunctionComponent = () => {
             The remaining xxx are reserved for collabs, giveaways, and rewards.
           </p>
           <hr className={classes.rule} />
-          
+
 
           <p>
             SockBot is brought to you by your dear friends at SockHodler.
