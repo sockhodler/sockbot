@@ -20,17 +20,27 @@
     font-size: 1.6rem;
     padding-left: 3rem;
     padding-right: 3rem;
+    // background:
+    //   linear-gradient(
+    //     to bottom,
+    //     rgb(137,16,165),
+    //     rgb(49,10,63),
+    //     ) padding-box,
+    //     linear-gradient(to top, var(--color-button-grad-purp), var(--color-button-grad-blue), var(--color-button-grad-orange)) border-box;
     background:
       linear-gradient(
         to bottom,
-        rgb(137,16,165),
-        rgb(49,10,63),
+        rgb(127,127,127),
+        rgb(70,70,70),
         ) padding-box,
-        linear-gradient(to top, var(--color-button-grad-purp), var(--color-button-grad-blue), var(--color-button-grad-orange)) border-box;
+        linear-gradient(to top, #707070, #888888, #444444) border-box;
     border-radius: 500px;
     border: 2px solid transparent;
     transition: all .7s;
     height: 6rem;
+
+    pointer-events: none;
+    cursor: not-allowed;
 
     @include respond(xs) {
       font-size: 1.4rem;
@@ -42,10 +52,10 @@
   }
 
 
-  &__btn:hover {
-   box-shadow: 0rem 0rem 2rem var(--color-pink-glow);
-   filter: hue-rotate(-15deg);
-   transform: scale(1.03);
-  }
+  // &__btn:hover {
+  //  box-shadow: 0rem 0rem 2rem var(--color-pink-glow);
+  //  filter: hue-rotate(-15deg);
+  //  transform: scale(1.03);
+  // }
 
 }

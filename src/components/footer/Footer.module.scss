@@ -32,7 +32,21 @@
   }
 
   &__logo {
-    width: 25%;
+    width: 20%;
+    transition: all .4s ease-in;
+    transform: scale(1);
+
+    @include respond(sl) {
+      width: 15%;
+    }
+
+    @include respond(xl) {
+      width: 15%;
+    }
+
+    @include respond(lg) {
+      width: 20%;
+    }
 
     @include respond(md) {
       width: 25%;
@@ -45,6 +59,10 @@
     @include respond(xs) {
       width: 50%;
     }
+  }
+
+  &__logo:hover {
+    transform: scale(1.05);
   }
 
   &__menu {
@@ -79,7 +97,7 @@
   }
 
   &__menu a:hover {
-    color: var(--color-hot-pink)
+    color: var(--color-hot-pink);
   }
 
   &__social {
@@ -88,7 +106,12 @@
 
   &__social a img {
       display: inline;
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
+      transform: scale(1);
+      transition: all .4s ease-in-out;
+  }
+  &__social a img:hover {
+      transform: scale(1.1);
   }
 }

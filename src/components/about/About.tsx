@@ -79,9 +79,12 @@ export const About:React.FunctionComponent = () => {
             This NFT collection combines crisp 3D art and 170+ unique traits for maximum coolness.
           </p>
           <p>
-            The mint price will be set at xxA and the first batch is set to release on XXXX xx/22.  From there, weekly drops will be made until x,xxx are in circulation.
+            The mint price will be set at xxA and the first batch is set to release on XXXX xx/22 with a special shuffle for Genesis Collection Holders.Genesis NFT .  From there, weekly drops will be made until x,xxx are in circulation.
             The remaining xxx are reserved for collabs, giveaways, and rewards.
           </p>
+          <hr className={classes.rule} />
+          
+
           <p>
             SockBot is brought to you by your dear friends at SockHodler.
           </p>

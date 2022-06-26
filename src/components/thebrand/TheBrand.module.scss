@@ -1,5 +1,28 @@
 @import "../../styles/abstract/mixins";
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes scalar {
+	0% {
+		transform: scaleX(1);
+	}
+	50% {
+		transform: scaleX(1.1);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+
 .thebrand_wrapper {
   display: flex;
   flex-direction: column;
@@ -34,9 +57,9 @@
     display: flex;
     align-items: center;
     justify-content: shrink;
-    mix-blend-mode: overlay;
+    mix-blend-mode: normal;
     background: url('../../images/SH-Submark.svg') no-repeat center top;
-    opacity: 75%;
+    opacity: 100%;
 
     @include respond(sm) {
       display: none;
@@ -62,6 +85,23 @@
   }
 
 }
+.bot {
+  max-height: 400px;
+  mix-blend-mode: normal;
+  isolation: isolate;
+  position: relative;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+
+  &__shadow {
+    max-height: 80px;
+    mix-blend-mode: normal;
+    isolation: isolate;
+    position: relative;
+    transform: scaleX(1);
+    animation: scalar 6s ease-in-out infinite;
+  }
+}
 
 .capsule {
   margin-top: 3rem;
@@ -74,6 +114,7 @@
   align-items: center;
   justify-content: center;
   transition: all .45s ease-in;
+	transform: scale(1);
 
   & a {
     color: var(--color-violet);
@@ -84,6 +125,7 @@
 }
 .capsule:hover {
   background: var(--color-hot-pink);
+	transform: scale(1.05);
 
   & a {
     color: var(--color-white);
@@ -94,8 +136,11 @@
   width: 85px;
   height: 85px;
   color: var(--color-white);
+	transition: all .45s ease-in;
+	transform: scale(1);
 }
 
 .social:hover {
   color: var(--color-hot-pink);
+	transform: scale(1.1);
 }

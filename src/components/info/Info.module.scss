@@ -1,0 +1,175 @@
+@import "../../styles/abstract/mixins";
+@import "../../styles/abstract/variables";
+
+@keyframes ramp {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.info_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 4;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: ramp 15s ease infinite;
+}
+
+.info_content {
+  width: 90%;
+  border: .1rem var(--color-hot-pink) solid;
+  background: linear-gradient(
+     to left,
+     rgba(117,6,143,.85),
+     rgba(8,10,46,.85)
+   );
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  position: relative;
+  z-index: 10;
+  margin: 10rem auto 10rem auto;
+  align-items: center;
+
+  & h2 {
+    margin: 4rem 8rem 0rem 8rem;
+  }
+
+  & h3 {
+    margin: 0rem 8rem 8rem 8rem;
+    font-family: "lato", sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: normal;
+  }
+
+  & p {
+    margin: 4rem 0;
+  }
+
+  &__button {
+    display: block;
+    width: 50%;
+    text-align: center;
+    padding: 2rem;
+    margin: 10rem auto 5rem auto;
+    //colorbtn background:
+    //   linear-gradient(
+    //     to bottom,
+    //     rgb(137,16,165),
+    //     rgb(49,10,63),
+    //     ) padding-box,
+    //     linear-gradient(to top, var(--color-button-grad-purp), var(--color-button-grad-blue), var(--color-button-grad-orange)) border-box;
+
+    background:
+      linear-gradient(
+        to bottom,
+        rgb(127,127,127),
+        rgb(70,70,70),
+        ) padding-box,
+        linear-gradient(to top, #707070, #888888, #444444) border-box;
+    border-radius: 500px;
+    border: 2px solid transparent;
+    transition: all .7s;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
+  // &__button:hover {
+  //    box-shadow: 0rem 0rem 2rem var(--color-pink-glow);
+  //    filter: hue-rotate(-15deg);
+  // }
+
+  @include respond(sl) {
+    padding: 15rem;
+
+  }
+
+  @include respond(xl) {
+    padding: 5rem 5rem 5rem 5rem;
+
+  }
+
+  @include respond(lg) {
+    padding: 10rem 5rem 10rem 5rem;
+
+  }
+
+  @include respond(md) {
+    padding: 5rem;
+
+  }
+
+  @include respond(sm) {
+    padding: 2rem;
+    font-size: 1.6rem;
+
+  }
+
+  @include respond(xs) {
+    padding: 2rem;
+    font-size: 1.6rem;
+
+  }
+
+
+
+}
+
+.drops {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 0rem;
+}
+
+.drop_schedule {
+  width: calc(50% - 4rem);
+
+  padding: 4rem;
+  background: linear-gradient(
+   to left,
+   rgba(64,0,49,.35),
+   rgba(0,0,0,.35)
+  );
+  border-radius: 15px;
+  align-items: stretch;
+
+
+  & h3 {
+    font-family: "lato", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    text-align: left;
+    margin-left: 0rem;
+
+  }
+
+  & h4 {
+    margin-bottom: 2rem;
+  }
+}
+
+.nomargin {margin: 0 0 0 0 !important;}
+
+.rule {
+  height: 2px;
+  background-color: var(--color-hot-pink);
+  border-style: none;
+  margin-bottom: 4rem;
+}

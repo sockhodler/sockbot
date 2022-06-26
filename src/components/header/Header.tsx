@@ -13,7 +13,7 @@ export const Header: React.FunctionComponent = () => {
     <div className= {classes.header}>
 
       <div className={classes.logo}>
-        <a href = "https://www.sockhodler.com" target = "_blank">
+        <a href = "https://www.sockhodler.com" target = "_blank" rel="noreferrer">
           <img
             src= {Logo}
             alt= "SockBot Submark"
@@ -40,6 +40,15 @@ export const Header: React.FunctionComponent = () => {
           duration={750}
           >
           About
+        </Link>
+        <Link
+          className = {classes.navigation__link}
+          to="info"
+          spy={true}
+          offset={50}
+          duration={750}
+          >
+          Info
         </Link>
         <Link
           className = {classes.navigation__link}

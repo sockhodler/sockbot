@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
 import {
   Header,
   Hero,
   About,
+  Info,
   Story,
   Faq,
   TheBrand,
@@ -24,6 +24,7 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <Info />
       <Story />
       <Faq />
       <TheBrand />

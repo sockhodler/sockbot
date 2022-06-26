@@ -11,7 +11,7 @@
   background-size: cover;
 
   @include respond(md) {
-    min-height: 40vh;
+
   }
 
   @include respond(sm) {
@@ -27,7 +27,7 @@
   }
 
   &__good_bot {
-    z-index: -1;
+    z-index: 5;
     background: url('../../images/sockbot-hero.png') no-repeat;
     background-size: cover;
     position: absolute;
@@ -44,19 +44,19 @@
     }
 
     @include respond(xl) {
-      width: 95rem;
-      height: 95rem;
+      width: 90rem;
+      height: 90rem;
       left: -15rem;
     }
 
     @include respond(lg) {
-      width: 90rem;
-      height: 90rem;
+      width: 80rem;
+      height: 80rem;
     }
 
     @include respond(md) {
-      width: 75rem;
-      height: 75rem;
+      width: 70rem;
+      height: 70rem;
     }
     @include respond(sm) {
       width: 40rem;

@@ -1,7 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import MyAlgoConnect from '@randlabs/myalgo-connect';
-import { useSelector, useDispatch } from "react-redux";
-// import { PeraWalletConnect } from "@perawallet/connect";
 import classes from './ConnectWallet.module.scss';
 // import { Dialog, Button, Classes, HTMLSelect, Intent } from '@blueprintjs/core'
 // import { IconName } from '@blueprintjs/icons'
@@ -12,11 +10,6 @@ const myAlgoConnect = new MyAlgoConnect();
 const CONNECT_WALLET = "CONNECT_WALLET"
 const DISCONNECT_WALLET = "DISCONNECT_WALLET"
 
-// interface Props {
-//   isConnected: boolean
-//   // address: string;
-// }
-
 export const ConnectWallet:React.FunctionComponent = () => {
 
   const [isConnected, setWalletConnected] = useState('Connect Wallet');
@@ -24,21 +17,25 @@ export const ConnectWallet:React.FunctionComponent = () => {
   async function connectToMyAlgo() {
     try {
         const accounts = await myAlgoConnect.connect()
-        setWalletConnected('Disconnect')
 
-        const addresses = accounts.map(account => account.address);
 
-        if (addresses) {
-            localStorage.setItem("myAlgoAddress", addresses[0])
-            console.log(localStorage);
+        const accountInfo = accounts[0];
+
+        if (accountInfo) {
+            localStorage.setItem("myAlgoAddress", accountInfo.address)
+            localStorage.setItem("Name", accountInfo.name)
+            setWalletConnected('Disconnect')
         }
 
-        console.log(addresses)
+
 
     } catch (err) {
         console.error(err);
     }
+
   }
+
+
 
   return (
     <div className={classes.connect_button_wrapper}>
@@ -47,6 +44,7 @@ export const ConnectWallet:React.FunctionComponent = () => {
         onClick={connectToMyAlgo}>
         {isConnected}
       </button>
+      <p></p>
     </div>
   );
 

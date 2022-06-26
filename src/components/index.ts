@@ -1,6 +1,7 @@
 
 // Single Page Components
 export { About } from "./about/About";
+export { Info } from "./info/Info";
 export { Faq } from "./faq/Faq";
 export { Header } from "./header/Header";
 export { Footer } from "./footer/Footer";

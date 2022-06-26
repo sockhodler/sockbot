@@ -81,9 +81,17 @@
     letter-spacing: 3px;
     cursor: pointer;
 
+    @include respond(xl) {
+      padding: 3rem 3rem;
+    }
+
+    @include respond(lg) {
+      padding: 2.5rem 2.5rem;
+    }
+
     @include respond(md) {
-      font-size: 1.4rem;
-      padding: 1rem 1rem;
+      font-size: 1.5rem;
+      padding: 1.4rem 1.4rem;
     }
   }
 

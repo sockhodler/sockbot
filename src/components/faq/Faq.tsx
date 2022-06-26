@@ -48,7 +48,7 @@ export const Faq: React.FunctionComponent = () => {
             ffff
           </Section>
 
-          <Section title="Wen Utility?" defaultExpanded="false">
+          <Section title="What utility does this have?" defaultExpanded="false">
             ffff
           </Section>
 
