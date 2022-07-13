@@ -31,29 +31,40 @@ export const Faq: React.FunctionComponent = () => {
         <div className = {classes.faq_content}>
           <h2>FAQ</h2>
 
-          <Section title="What is SockBot?" defaultExpanded="false">
-            Created by the team at SockHodler, SockBot is a series of x,xxx NFT Collectibles that provide access to a whole new realm of utility and experiences.
-            Every SockBot is unique and has various traits and accessories.
+          <Section title="Why is a crypto apparel brand selling PFP NFTs" defaultExpanded="true">
+            We’ve heard numerous times that people would like to not only purchase a PFP NFT from us but also to have the opportunity to get unique one-off physically-backed apparel.<br /><br />
+            SockBot is near and dear to us, and we will be expanding on his story and providing additional utility along the way.
           </Section>
 
           <Section title="Will there be a public sale?" defaultExpanded="false">
-            fgfff
+            Yes!  After the presale is completed, a public sale will commence the following day.  Any unsold NFTs from the collection will be available for purchase in a second public shuffle the week following.
           </Section>
 
-          <Section title="Will there be a Welcome List?" defaultExpanded="false">
-            ffff
+          <Section title="Will there be an Allow List?" defaultExpanded="false">
+            Yep, we gotta take care of the existing communities so we will be automatically providing an Allowlist opportunity for Sockhodler Genesis NFT holders, as well as spots for partner communities.<br /><br />
+            Stay tuned on Discord.
           </Section>
 
-          <Section title="When will information be shared about the launch?" defaultExpanded="false">
-            ffff
+          <Section title="How much do they cost?" defaultExpanded="false">
+            The public sale will sell for 100 Algo, and the presale will sell for 75 Algo.
           </Section>
 
           <Section title="What utility does this have?" defaultExpanded="false">
-            ffff
+          Please read the <a href="#info">Info section</a> for more details, but here’s the sum of it…for now ;) <br /><br />
+          - Whale Club - Exclusive free 1/1 physically-backed NFT Socks using NFC Tags.<br />
+          - Expanded NFT Ownership Rights<br />
+          - NFT Staking<br />
+          - Airdrops
+          </Section>
+
+          <Section title="What are the technical specs for SockBot NFTs?" defaultExpanded="false">
+            Each SockBot is minted as a 1/1 ARC69-formatted NFT on Algorand.  The artwork is hosted on IPFS.
           </Section>
 
           <Section title="Who are the team behind SockBot?" defaultExpanded="false">
-            ffff
+            <a href="https://www.sockhodler.com" target="_blank" rel="noopener noreferrer">SockHodler!</a><br />
+            We are a small team of creators, ALGO-philes, and internet lurkers that are creating crypto apparel for the most diamond-handed of hodlers.  <br /><br />
+            Additionally, we are developing the world’s first blockchain-enabled physically-backed sock using Near Field Communication to link NFTs to the real world.
           </Section>
 
      </div>

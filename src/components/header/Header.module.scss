@@ -80,6 +80,7 @@
     font-weight: 500;
     letter-spacing: 3px;
     cursor: pointer;
+    color: var(--color-white);
 
     @include respond(xl) {
       padding: 3rem 3rem;

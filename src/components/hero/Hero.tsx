@@ -11,7 +11,7 @@ export const Hero: React.FunctionComponent = () => {
           <div className = {classes.hero_wrapper__good_bot}></div>
         </div>
         <div className = {classes.hero_content__right}>
-          <p>2,222 Premium NFTs Minted on Algorand</p>
+          <p>2,222 Premium NFT Collection</p>
           <img src={FullLogo} className = {classes.logo} alt="SockBot Logo"/>
           <div className = {classes.bubble}>
             <div className = {classes.bubble__text}>

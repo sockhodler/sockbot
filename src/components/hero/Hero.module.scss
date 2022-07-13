@@ -186,9 +186,17 @@
   &__text {
     color: black;
     text-transform: uppercase;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 1rem;
+    margin-left: 1rem;
     text-align: center;
+
+    @include respond(xl) {
+      font-size: 1.8rem;
+    }
+
+    @include respond(lg) {
+      font-size: 1.8rem;
+    }
 
     @include respond(md) {
       font-size: 1.8rem;
@@ -199,7 +207,9 @@
     }
 
     @include respond(xs) {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
+      margin-left: auto;
+      margin-right: auto
     }
   }
 

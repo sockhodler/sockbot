@@ -30,7 +30,7 @@
   @include respond(sl) {
     margin: 10rem 0 10rem 0;
     width: 70%;
-    padding: 15rem;
+    padding: 10rem 15rem 10rem 15rem;
   }
 
   @include respond(xl) {

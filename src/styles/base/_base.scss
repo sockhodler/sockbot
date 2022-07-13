@@ -31,10 +31,14 @@ main {
 }
 
 a {
-  color: inherit;
+  color: var(--color-teal);
   text-decoration: none;
   transition: all .35s ease-in-out;
   background-color: transparent;
+}
+
+a:hover {
+  color: var(--color-hot-pink)
 }
 
 h2 {

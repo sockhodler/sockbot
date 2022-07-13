@@ -42,7 +42,7 @@
   align-items: center;
 
   & h2 {
-    margin: 4rem 8rem 0rem 8rem;
+    margin: 0rem 8rem 0rem 8rem;
   }
 
   & h3 {
@@ -82,6 +82,7 @@
     transition: all .7s;
     pointer-events: none;
     cursor: not-allowed;
+    color: var(--color-white);
   }
 
   // &__button:hover {
@@ -90,7 +91,7 @@
   // }
 
   @include respond(sl) {
-    padding: 15rem;
+    padding: 10rem;
 
   }
 
@@ -118,10 +119,7 @@
   @include respond(xs) {
     padding: 2rem;
     font-size: 1.6rem;
-
   }
-
-
 
 }
 
@@ -138,9 +136,78 @@
 }
 
 .drop_schedule {
-  width: calc(50% - 4rem);
-
+  box-sizing: border-box;
   padding: 4rem;
+  background: linear-gradient(
+   to left,
+   rgba(64,0,49,.35),
+   rgba(0,0,0,.35)
+  );
+  border-radius: 15px;
+
+  & h3 {
+    font-family: "lato", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    text-align: left;
+    margin-left: 0rem;
+
+  }
+
+  & h4 {
+    margin-bottom: 2rem;
+  }
+
+  @include respond(sl) {
+    width: calc(50% - 4rem);
+  }
+
+  @include respond(xl) {
+    width: calc(50% - 4rem);
+  }
+
+  @include respond(lg) {
+    width: calc(50% - 4rem);
+  }
+
+  @include respond(md) {
+    width: calc(100% - 4rem);
+  }
+
+  // @include respond(sm) {
+  //   width: calc(50% - 4rem);
+  // }
+  //
+  // @include respond(xs) {
+  //   width: calc(50% - 4rem);
+  // }
+}
+
+.nomargin {margin: 0 0 0 0 !important;}
+
+.rule {
+  height: 3px;
+  background-color: var(--color-hot-pink);
+  border-style: none;
+  margin-bottom: 2rem;
+}
+.spacer10 {
+  height: 10rem;
+  border-style: none;
+  color: transparent;
+}
+.spacer5 {
+  height: 5rem;
+  border-style: none;
+  color: transparent;
+}
+
+.utility {
+  width: 100%;
+  padding: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   background: linear-gradient(
    to left,
    rgba(64,0,49,.35),
@@ -163,13 +230,12 @@
   & h4 {
     margin-bottom: 2rem;
   }
-}
 
-.nomargin {margin: 0 0 0 0 !important;}
+  & a {
+    color: var(--color-hot-pink);
+  }
 
-.rule {
-  height: 2px;
-  background-color: var(--color-hot-pink);
-  border-style: none;
-  margin-bottom: 4rem;
+  & a:hover {
+    color: var(--color-teal);
+  }
 }
