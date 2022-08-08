@@ -80,20 +80,27 @@ export const About:React.FunctionComponent = () => {
             SockBot is a collection of 2,222 NFTs minted on Algorand.
           </p>
           <p>
-            This NFT collection combines crisp 3D art and 170+ unique traits for maximum coolness. Every SockBot is outfitted and ready for war as he searches for his long-lost creator.
+            This NFT collection combines crisp 3D art and 175+ unique traits for maximum coolness. Every SockBot is outfitted and ready for war as he searches for his long-lost creator.
           </p>
           <p>
-            The mint price for the public sale will be set at 100 Algo.  There will be a presale for Genesis Coin NFT holders as well as select partner communities.  Genesis Holders also qualify to mint an NFT with a special trait.
-          </p>
-
-          <p>
-            For every SockBot NFT sold, 10% of the proceeds will go to supporting the SOCKS/ALGO liquidity pool, 5% to the community wallet, and 5% to “Re-Volv Solar”.
-            Re-Volv helps non-profits around the company go green by investing in solar solutions that help the environment, cut energy costs, and bring clean energy to their respective communities.
-            View more info at <a href="https://re-volv.org/" target="_blank" rel="noopener noreferrer">re-volv.org</a>.
+            The mint price for the public sale will be set at 100 Algo.  There will be a presale for Genesis Coin NFT holders as well as select partner communities sold at 75 Algo.  
+            Genesis Holders also qualify to mint an NFT with a special trait.
           </p>
 
           <p>
-            222 NFTs from this collection will be reserved to cover the staff (1x Each) and distribute the rest via $SOCKS Auctions, Collabs, and Giveaways.
+            For every SockBot NFT sold, 10% of the proceeds will go to supporting the SOCKS/ALGO liquidity pool, 5% to the community wallet, and 5% to St. Jude Children's Research Hospital.
+            St. Jude wants to cure childhood cancer, and so do we.  Our donations will be auditable from our NFD profile 
+            <a href="https://app.nf.domains/name/sockbot.algo" target="_blank" rel="noreferrer noopener">"sockbot.algo"</a>. 
+            <br />
+            <br />
+            View more info at <a href="https://www.stjude.org/" target="_blank" rel="noopener noreferrer">stjude.org</a>.
+          </p>
+
+          <p>
+            122 NFTs from this collection will be reserved to cover the staff and strategic partners (22x), $SOCKS Auctions (25x), Collabs (25x), Genesis Holder Giveaways (25x), and General Giveaways (25x). 
+            <br />
+            <br /> 
+            100 Physically-Backed NFTs with Base SockBot traits will be sold as a limited run on our webshop at <a href="https://shop.sockhodler.com" target="_blank" rel="noopener noreferrer">shop.sockhodler.com</a>.  These NFT Socks will allow the user to participate in daily scan rewards in "The SockVault".
           </p>
 
           <hr className={classes.rule} />
