@@ -75,14 +75,14 @@ export const Info:React.FunctionComponent = () => {
         <div className={classes.utility}>
           <h3>Whale Club</h3>
           <p className={classes.nomargin}>
-            Purchase 10 SockBot NFTs and get a pair of Physically-Backed NFT Socks that features a design of one of the SockBots you own.
+          Purchase 10 SockBot NFTs and stake for at least 1 month to claim a free pair of Physically-Backed NFT Socks that are linked to what will be the next evolution of SockBot. <br /><br />
+          
+          Members of our Whale Club will have first access to SockBot2.0, which will be an upgradeable ARC-19 NFTs that allow users to level up their NFTs through the use of Spare Parts and daily use of the NFT Scanning feature on the socks. These will be the only Legendary Traits given out.  
+          These socks are linked to the blockchain by using Near Field Communication tags embedded in the cuff of the sock and your NFT will be upgradeable in the future.  
           </p>
           <p>
-            These socks are linked to the blockchain by using Near Field Communication tags embedded in the cuff of the sock.
-          </p>
-          <p>
-            These limited edition socks will be printed as one-offs and no additional ones will be created for the corresponding NFTs that are submitted.
-            Owners of NFT Socks will have access to the “SOCK VAULT”; a dApp that allows you to claim rewards for daily scans, as well as NFT Staking.
+          These limited edition socks will be printed as one-offs and no additional ones will be created for the corresponding NFTs that are submitted.  
+          Owners of NFT Socks will have access to the “SOCK VAULT”; a dApp that allows you to claim rewards for daily scans, as well as NFT Staking.
           </p>
         </div>
 

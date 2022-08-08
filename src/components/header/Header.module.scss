@@ -58,13 +58,13 @@
 }
 
 .navigation {
-  width: 60%;
+  width: 65%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 
   @include respond(md) {
-    width: 50%;
+    width: 55%;
   }
 
   @include respond(sm) {
@@ -87,12 +87,13 @@
     }
 
     @include respond(lg) {
-      padding: 2.5rem 2.5rem;
+      padding: 2.0rem 2.0rem;
     }
 
     @include respond(md) {
-      font-size: 1.5rem;
-      padding: 1.4rem 1.4rem;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      padding: 1.0rem 1.0rem;
     }
   }
 
@@ -126,6 +127,18 @@
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+
+  @include respond(xl) {
+    min-width: 250px;
+  }
+
+  @include respond(lg) {
+    min-width: 200px;
+  }
+
+  @include respond(md) {
+    min-width: 150px;
+  }
 
   &:hover {
     background: #44f8bd;

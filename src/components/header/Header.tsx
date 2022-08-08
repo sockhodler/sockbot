@@ -68,6 +68,14 @@ export const Header: React.FunctionComponent = () => {
           >
           FAQ
         </Link>
+        <a
+          className = {classes.navigation__link}
+          href = "https://sockhodler.gitbook.io/sockbot-litepaper"
+          target= "_blank"
+          rel= "noopener noreferrer"
+          >
+          LitePaper
+        </a>
         <Link
           className = {classes.navigation__link}
           to="thebrand"
@@ -75,7 +83,7 @@ export const Header: React.FunctionComponent = () => {
           offset={50}
           duration={750}
           >
-          The Brand
+          Brand
         </Link>
 
       </nav>
