@@ -88,8 +88,8 @@ export const About:React.FunctionComponent = () => {
           </p>
 
           <p>
-            For every SockBot NFT sold, 10% of the proceeds will go to supporting the SOCKS/ALGO liquidity pool, 5% to the community wallet, and 5% to St. Jude Children's Research Hospital.
-            St. Jude wants to cure childhood cancer, and so do we.  Our donations will be auditable from our NFD profile <a href="https://app.nf.domains/name/sockbot.algo" target="_blank" rel="noreferrer noopener">"sockbot.algo"</a>. 
+            For every SockBot NFT sold, 10% of the proceeds will go to supporting the SOCKS/ALGO liquidity pool, 5% to the community wallet, and 5% to St. Jude Children&apos;s Research Hospital.
+            St. Jude wants to cure childhood cancer, and so do we.  Our donations will be auditable from our NFD profile <a href="https://app.nf.domains/name/sockbot.algo" target="_blank" rel="noreferrer noopener">&quot;sockbot.algo&quot;</a>. 
             <br />
             <br />
             View more info at <a href="https://www.stjude.org/" target="_blank" rel="noopener noreferrer">stjude.org</a>.
@@ -99,7 +99,7 @@ export const About:React.FunctionComponent = () => {
             122 NFTs from this collection will be reserved to cover the staff and strategic partners (22x), $SOCKS Auctions (25x), Collabs (25x), Genesis Holder Giveaways (25x), and General Giveaways (25x). 
             <br />
             <br /> 
-            At a later date, 100 Physically-Backed NFTs with Base SockBot traits will be sold as a limited run on our webshop at <a href="https://shop.sockhodler.com" target="_blank" rel="noopener noreferrer">shop.sockhodler.com</a>.  These NFT Socks will allow the user to participate in daily scan rewards in "The SockVault".
+            At a later date, 100 Physically-Backed NFTs with Base SockBot traits will be sold as a limited run on our webshop at <a href="https://shop.sockhodler.com" target="_blank" rel="noopener noreferrer">shop.sockhodler.com</a>.  These NFT Socks will allow the user to participate in daily scan rewards in &quot;The SockVault&quot;.
           </p>
 
           <hr className={classes.rule} />
