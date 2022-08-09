@@ -25,9 +25,11 @@ return (
 export const Faq: React.FunctionComponent = () => {
     return (
       <div id = "faq" className = {classes.faq_wrapper}>
-        <div className = {classes.faq_circles}>
+        {
+          // <div className = {classes.faq_circles}>
 
-        </div>
+          // </div>
+        }
         <div className = {classes.faq_content}>
           <h2>FAQ</h2>
 

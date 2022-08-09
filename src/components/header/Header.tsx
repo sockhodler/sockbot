@@ -43,21 +43,21 @@ export const Header: React.FunctionComponent = () => {
         </Link>
         <Link
           className = {classes.navigation__link}
-          to="info"
-          spy={true}
-          offset={50}
-          duration={750}
-          >
-          Info
-        </Link>
-        <Link
-          className = {classes.navigation__link}
           to="story"
           spy={true}
           offset={50}
           duration={750}
           >
           Story
+        </Link>
+        <Link
+          className = {classes.navigation__link}
+          to="info"
+          spy={true}
+          offset={50}
+          duration={750}
+          >
+          Info
         </Link>
         <Link
           className = {classes.navigation__link}
@@ -68,14 +68,16 @@ export const Header: React.FunctionComponent = () => {
           >
           FAQ
         </Link>
-        <a
-          className = {classes.navigation__link}
-          href = "https://sockhodler.gitbook.io/sockbot-litepaper"
-          target= "_blank"
-          rel= "noopener noreferrer"
-          >
-          LitePaper
-        </a>
+        {
+        // <a
+        //   className = {classes.navigation__link}
+        //   href = "https://sockhodler.gitbook.io/sockbot-litepaper"
+        //   target= "_blank"
+        //   rel= "noopener noreferrer"
+        //   >
+        //   LitePaper
+        // </a>
+        }
         <Link
           className = {classes.navigation__link}
           to="thebrand"

@@ -24,8 +24,8 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <Info />
       <Story />
+      <Info />
       <Faq />
       <TheBrand />
       <Footer />

@@ -72,28 +72,6 @@ export const Info:React.FunctionComponent = () => {
         <h2>
           Utility
         </h2>
-        <div className={classes.utility}>
-          <h3>Whale Club</h3>
-          <p className={classes.nomargin}>
-          Purchase 10 SockBot NFTs and stake for at least 1 month to claim a free pair of Physically-Backed NFT Socks that are linked to what will be the next evolution of SockBot. <br /><br />
-          
-          Members of our Whale Club will have first access to SockBot2.0, which will be an upgradeable ARC-19 NFTs that allow users to level up their NFTs through the use of Spare Parts and daily use of the NFT Scanning feature on the socks. These will be the only Legendary Traits given out.  
-          These socks are linked to the blockchain by using Near Field Communication tags embedded in the cuff of the sock and your NFT will be upgradeable in the future.  
-          </p>
-          <p>
-          These limited edition socks will be printed as one-offs and no additional ones will be created for the corresponding NFTs that are submitted.  
-          Owners of NFT Socks will have access to the “SOCK VAULT”; a dApp that allows you to claim rewards for daily scans, as well as NFT Staking.
-          </p>
-        </div>
-
-        <div className={classes.utility}>
-          <h3>NFT License for Copyright</h3>
-          <p className={classes.nomargin}>
-            We are adopting the <a href="https://www.nftlicense.org/" target="_blank" rel="noopener noreferrer">“NFT License”</a> commonly used for Ethereum NFTs.<br /><br />
-            Owners of SockBot NFTs will have the broad rights to use the art for personal uses as well as commercial uses for up to $100,000 a year in revenue. <br /><br />
-            We want to encourage the #algofam to create spin-offs and expand on the story and utility of SockBot.
-          </p>
-        </div>
 
         <div className={classes.utility}>
           <h3>NFT Staking</h3>
@@ -107,14 +85,34 @@ export const Info:React.FunctionComponent = () => {
           <h3>Airdrops</h3>
           <p className={classes.nomargin}>
             Holders who stake their SockBot NFTs also qualify for periodic airdrops.  Some will integrate with the future of the project; some will be as a staker perk.  <br /><br/>
-            We’ve got some cool plans for the future of SockBot utility, but we’ll make announcements once our current initiatives are finished being implemented.
+            We&apos;ve got some cool plans for the future of SockBot utility, but we&apos;ll make announcements regarding a specific roadmap once our current initiatives are finished being implemented.
           </p>
         </div>
 
+        <div className={classes.utility}>
+          <h3>Sock Force One</h3>
+          <p className={classes.nomargin}>
+          Purchase 10 SockBot NFTs and stake for at least 1 month to claim a free pair of Physically-Backed NFT Socks that are linked to what will be the next evolution of SockBot. <br /><br />
+          
+          Members of <strong>Sock Force One</strong> will have first access to SockBot2.0, which will be an upgradeable ARC-19 NFTs that allow users to level up their NFTs through the use of Spare Parts and daily use of the NFT Scanning feature on the socks. These will be the only Legendary Traits given out.  
+          These socks are linked to the blockchain by using Near Field Communication tags embedded in the cuff of the sock and your NFT will be upgradeable in the future.  
+          </p>
+          <p>
+          These limited edition socks will be printed as one-offs and no additional ones will be created for the corresponding NFTs that are minted.  
+          Owners of NFT Socks will have access to the “SOCK VAULT”; a dApp that allows you to claim rewards for daily scans, as well as NFT Staking.
+          </p>
+        </div>
 
+        <div className={classes.utility}>
+          <h3>NFT License for Copyright</h3>
+          <p className={classes.nomargin}>
+            We are adopting the <a href="https://www.nftlicense.org/" target="_blank" rel="noopener noreferrer">“NFT License”</a> commonly used for Ethereum NFTs.<br /><br />
+            Owners of SockBot NFTs will have the broad rights to use the art for personal uses as well as commercial uses for up to $100,000 a year in revenue. <br /><br />
+            We want to encourage the #algofam to create spin-offs and expand on the story and utility of SockBot.
+          </p>
+        </div>
 
         <a href="" className = {classes.info_content__button}>Mint Coming Soon</a>
-
 
       </div>
     </div>
