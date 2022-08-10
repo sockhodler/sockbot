@@ -90,7 +90,7 @@ export const Header: React.FunctionComponent = () => {
 
       </nav>
 
-      <ConnectWallet />
+      {/* <ConnectWallet /> */}
 
     </div>
   )
