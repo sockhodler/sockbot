@@ -4,7 +4,6 @@ import sockbot01 from '../../images/sockbot-01.jpg';
 import sockbot02 from '../../images/sockbot-02.jpg';
 import sockbot03 from '../../images/sockbot-03.jpg';
 import sockbot04 from '../../images/sockbot-04.jpg';
-import sockbot0x from '../../images/sockbot-0x.jpg';
 
 interface NFTCard {
   image?: string;
@@ -24,13 +23,13 @@ const RandomImages:React.FunctionComponent<Props> = (
 
   return (
     <div>
-      <img src={nftcards.image} alt = "Sockbot" />
+      <img src={nftcards?.image } alt = "Sockbot" />
       <div className = {classes.card1__content}>
         <h3>
-          {nftcards.title}
+          {nftcards?.title}
         </h3>
         <p>
-          {nftcards.desc}
+          {nftcards?.desc}
         </p>
       </div>
     </div>
@@ -58,17 +57,12 @@ export const About:React.FunctionComponent = () => {
       image: sockbot04 ,
       title: "SOCKBOT 401",
       desc: "Float like a butterfly and sting like a bee."
-    },
-    {
-      image: sockbot0x ,
-      title: "SOCKBOT 001",
-      desc: "Golden SockBot...His Final Form."
-    },
+    }
   ]
 
   const random = Math.floor(Math.random() * preloadSrcList.length);
   const selectedImage = preloadSrcList[random];
-  const selectedImage2 = preloadSrcList[4];
+  const selectedImage2 = preloadSrcList[0];
 
   return (
     <div id = "about" className = {classes.about_wrapper}>
@@ -83,22 +77,22 @@ export const About:React.FunctionComponent = () => {
             This NFT collection combines crisp 3D art and 175+ unique traits for maximum coolness. Every SockBot is outfitted and ready for war as he searches for his long-lost creator.
           </p>
           <p>
-            The mint price for the public sale will be set at 100 Algo.  There will be a presale for Genesis Coin NFT holders as well as select partner communities sold at 75 Algo.  
+            The mint price for the public sale will be set at 100 Algo.  There will be a presale for Genesis Coin NFT holders as well as select partner communities sold at 75 Algo.
             Genesis Holders also qualify to mint an NFT with a special trait.
           </p>
 
           <p>
             For every SockBot NFT sold, 10% of the proceeds will go to supporting the SOCKS/ALGO liquidity pool, 5% to the community wallet, and 5% to St. Jude Children&apos;s Research Hospital.
-            St. Jude wants to cure childhood cancer, and so do we.  Our donations will be auditable from our NFD profile <a href="https://app.nf.domains/name/sockbot.algo" target="_blank" rel="noreferrer noopener">&quot;sockbot.algo&quot;</a>. 
+            St. Jude wants to cure childhood cancer, and so do we.  Our donations will be auditable from our NFD profile <a href="https://app.nf.domains/name/sockbot.algo" target="_blank" rel="noreferrer noopener">&quot;sockbot.algo&quot;</a>.
             <br />
             <br />
             View more info at <a href="https://www.stjude.org/" target="_blank" rel="noopener noreferrer">stjude.org</a>.
           </p>
 
           <p>
-            122 NFTs from this collection will be reserved to cover the staff and strategic partners (22x), $SOCKS Auctions (25x), Collabs (25x), Genesis Holder Giveaways (25x), and General Giveaways (25x). 
+            122 NFTs from this collection will be reserved to cover the staff and strategic partners (22x), $SOCKS Auctions (25x), Collabs (25x), Genesis Holder Giveaways (25x), and General Giveaways (25x).
             <br />
-            <br /> 
+            <br />
             At a later date, 100 Physically-Backed NFTs with Base SockBot traits will be sold as a limited run on our webshop at <a href="https://shop.sockhodler.com" target="_blank" rel="noopener noreferrer">shop.sockhodler.com</a>.  These NFT Socks will allow the user to participate in daily scan rewards in &quot;The SockVault&quot;.
           </p>
 
@@ -110,6 +104,7 @@ export const About:React.FunctionComponent = () => {
           </p>
 
           <a href="https://discord.gg/8zD6BnTup2" className = {classes.about_content__button}>Join Discord</a>
+          
 
         </div>
         <div className = {classes.about_content__right}>

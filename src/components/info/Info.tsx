@@ -94,7 +94,7 @@ export const Info:React.FunctionComponent = () => {
           <p className={classes.nomargin}>
           Purchase 10 SockBot NFTs and stake for at least 1 month to claim a free pair of Physically-Backed NFT Socks that are linked to what will be the next evolution of SockBot. <br /><br />
           
-          Members of <strong>Sock Force One</strong> will have first access to SockBot2.0, which will be an upgradeable ARC-19 NFTs that allow users to level up their NFTs through the use of Spare Parts and daily use of the NFT Scanning feature on the socks. These will be the only Legendary Traits given out.  
+          Members of <strong>Sock Force One</strong> will have first access to SockBot2.0, which will be an upgradeable ARC-19 NFTs that allow users to level up their NFTs through the use of Spare Parts and daily use of the NFT Scanning feature on the socks.  
           These socks are linked to the blockchain by using Near Field Communication tags embedded in the cuff of the sock and your NFT will be upgradeable in the future.  
           </p>
           <p>

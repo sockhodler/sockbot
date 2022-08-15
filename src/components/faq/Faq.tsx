@@ -33,8 +33,8 @@ export const Faq: React.FunctionComponent = () => {
         <div className = {classes.faq_content}>
           <h2>FAQ</h2>
 
-          <Section title="Why is a crypto apparel brand selling PFP NFTs" defaultExpanded="true">
-            We’ve heard numerous times that people would like to not only purchase a PFP NFT from us but also to have the opportunity to get unique one-off physically-backed apparel.<br /><br />
+          <Section title="Why is a crypto apparel brand selling PFP NFTs?" defaultExpanded="true">
+            We’ve heard numerous times that people would like to not only purchase a PFP NFT from us but also to have the opportunity to get unique one-off physically-backed nft apparel.<br /><br />
             SockBot is near and dear to us, and we will be expanding on his story and providing additional utility along the way.
           </Section>
 
@@ -52,8 +52,8 @@ export const Faq: React.FunctionComponent = () => {
           </Section>
 
           <Section title="What utility does this have?" defaultExpanded="false">
-          Please read the <a href="#info">Info section</a> for more details, but here’s the sum of it…for now ;) <br /><br />
-          - Whale Club - Exclusive free 1/1 physically-backed NFT Socks using NFC Tags.<br />
+          Please read the <a href="#info">Info section</a> for more details, but here’s the sum of it…for now.  A litepaper will be released prior to launch with more information. <br /><br />
+          - Sock Force One - Exclusive free 1/1 physically-backed NFT Socks using NFC Tags.<br />
           - Expanded NFT Ownership Rights<br />
           - NFT Staking<br />
           - Airdrops
@@ -63,7 +63,7 @@ export const Faq: React.FunctionComponent = () => {
             Each SockBot is minted as a 1/1 ARC69-formatted NFT on Algorand.  The artwork is hosted on IPFS.
           </Section>
 
-          <Section title="Who are the team behind SockBot?" defaultExpanded="false">
+          <Section title="Who is the team behind SockBot?" defaultExpanded="false">
             <a href="https://www.sockhodler.com" target="_blank" rel="noopener noreferrer">SockHodler!</a><br />
             We are a small team of creators, ALGO-philes, and internet lurkers that are creating crypto apparel for the most diamond-handed of hodlers.  <br /><br />
             Additionally, we are developing the world’s first blockchain-enabled physically-backed sock using Near Field Communication to link NFTs to the real world.
