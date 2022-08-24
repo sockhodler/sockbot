@@ -56,7 +56,7 @@ export const About:React.FunctionComponent = () => {
     {
       image: sockbot04 ,
       title: "SOCKBOT 401",
-      desc: "Float like a butterfly and sting like a bee."
+      desc: "There's no maps where we're heading."
     }
   ]
 
