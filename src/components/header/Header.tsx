@@ -68,25 +68,15 @@ export const Header: React.FunctionComponent = () => {
           >
           FAQ
         </Link>
-        {
-        // <a
-        //   className = {classes.navigation__link}
-        //   href = "https://sockhodler.gitbook.io/sockbot-litepaper"
-        //   target= "_blank"
-        //   rel= "noopener noreferrer"
-        //   >
-        //   LitePaper
-        // </a>
-        }
-        <Link
+        
+        <a
           className = {classes.navigation__link}
-          to="thebrand"
-          spy={true}
-          offset={50}
-          duration={750}
+          href = "https://litepaper.sockbotnft.com"
+          target= "_blank"
+          rel= "noopener noreferrer"
           >
-          Brand
-        </Link>
+          LitePaper
+        </a>
 
       </nav>
 
