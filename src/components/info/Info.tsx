@@ -18,7 +18,7 @@ export const Info:React.FunctionComponent = () => {
           <div className={classes.drop_schedule}>
             <h3>Drop #1 - Genesis Holders Super Secret Shuffle</h3>
             <hr className={classes.rule} />
-            <h4>Date: TBD</h4>
+            <h4>Date: 09/14/22</h4>
             <p className={classes.nomargin}>
               <strong>Description:</strong> <br />
               Mint Price - 75 Algo <br /><br />
@@ -32,21 +32,19 @@ export const Info:React.FunctionComponent = () => {
           <div className={classes.drop_schedule}>
             <h3>Drop #2 - Allowlist Presale Shuffle</h3>
             <hr className={classes.rule} />
-            <h4>Date: TBD</h4>
+            <h4>Date: 09/14/22</h4>
             <p className={classes.nomargin}>
               <strong>Description:</strong> <br />
               Mint Price - 75 Algo <br /><br />
               250 members of partner communities will be invited into the Presale along with Genesis Holders. <br /><br />
-              5 Algorand NFT projects will be selected.<br /><br />
-              The allowed wallets will be collected from each respective project beforehand.  There is no max limit on the NFTs that can be purchased.
-
+              The allowed wallets will be collected from each respective project beforehand.
             </p>
           </div>
 
           <div className={classes.drop_schedule}>
             <h3>Drop #3 - Public Sale Shuffle #1</h3>
             <hr className={classes.rule} />
-            <h4>Date: TBD</h4>
+            <h4>Date: 09/15/22</h4>
             <p className={classes.nomargin}>
               <strong>Description:</strong> <br />
               Mint Price - 100 Algo.<br /><br />
