@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Helmet } from 'react-helmet';
 
 import {
@@ -11,9 +11,20 @@ import {
   TheBrand,
   Footer,
 } from './components';
-
+import ReactGA from 'react-ga';
 import './styles/base/_base.scss';
+
+const TRACKING_ID = 'UA-77305039-7';
+ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 function App() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
+
   return (
 
     <main>
