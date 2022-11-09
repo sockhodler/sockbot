@@ -15,10 +15,10 @@ export const Hero: React.FunctionComponent = () => {
           <img src={FullLogo} className = {classes.logo} alt="SockBot Logo"/>
           <div className = {classes.bubble}>
             <div className = {classes.bubble__text}>
-              Coming Soon
+              Only On
             </div>
             <div className = {classes.bubble__algorand}>
-              On Algorand
+              Algorand
             </div>
           </div>
 

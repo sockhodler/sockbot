@@ -171,7 +171,7 @@
 .bubble {
   background: var(--color-white);
   border-radius: 500px;
-  padding: .5rem;
+  padding: .5rem 1rem;
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
@@ -216,7 +216,7 @@
   &__algorand {
     color: var(--color-white);
     background: var(--color-hot-pink);
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 500px;
     font-size: 3.2rem;
     letter-spacing: .2rem;

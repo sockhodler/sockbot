@@ -10,9 +10,9 @@ export const Info:React.FunctionComponent = () => {
       <div className = {classes.info_content}>
         <h2>Info</h2>
 
-        <h3>
-          Drop Schedule
-        </h3>
+        <p>
+          The Public Mint is now live on <a href='https://instantshuffle.com/shuffle/iDQaXxFqbo4ECRJMnhXB' target='_blank' rel='noreferrer noopener'>instantshuffle.</a>
+        </p>
 
         <div className={classes.drops}>
           <div className={classes.drop_schedule}>
@@ -110,7 +110,7 @@ export const Info:React.FunctionComponent = () => {
           </p>
         </div>
 
-        <a href="" className = {classes.info_content__button}>Mint Coming Soon</a>
+        <a href="https://instantshuffle.com/shuffle/iDQaXxFqbo4ECRJMnhXB" className = {classes.info_content__button}>Mint Now</a>
 
       </div>
     </div>
